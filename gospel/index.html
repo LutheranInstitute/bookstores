@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>æ.store · Gospel · Pico OS</title>
+<title>L://Gospel_Bookstore · æ.store Pico OS</title>
 <meta name="description" content="The Gospel Bookstore · Laredo, TX · Biblias, libros cristianos y regalos. Pico OS surface de la red de tiendas.">
 <meta name="theme-color" content="#050516">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,27 +94,38 @@ html,body{height:100%;background:#000;color:var(--white);font-family:var(--sans)
 .toast.on{opacity:1}
 .foot{text-align:center;font:400 10px/1.6 var(--mono);color:var(--muted);margin-top:18px}
 .foot a{color:var(--soft)}
+.tg{background:none;border:1px solid var(--line2);color:var(--soft);font:700 10px var(--mono);border-radius:6px;padding:2px 6px;margin-left:6px;cursor:pointer}
+.hero h1 .l{color:var(--cyan)}
+.device.day{--bg:#f6f1e3;--panel:#fffaf0;--panel2:#fbf4e4;--lime:#2c7a00;--cyan:#0b5e8a;--gold:#a8801a;--white:#14142b;--soft:#44475c;--muted:#7d7f92;--line:rgba(20,20,80,.14);--line2:rgba(20,20,80,.28)}
+.device.day .tick{background:rgba(255,250,240,.85)}
+.device.day .dock{background:rgba(255,250,240,.92)}
+.device.day .cli{background:rgba(255,250,240,.97)}
+.device.day .blob{opacity:.12}
+.device.day .scan{display:none}
+.device.day .chip.on,.device.day .btn{color:#fff}
+.device.day .badge{color:#fff}
+.device,.tick,.dock,.pane,.card{transition:background-color .3s,color .3s,border-color .3s}
 </style>
 </head>
 <body>
 <div class="device">
   <div class="atm"><div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="grid-bg"></div><div class="scan"></div></div>
   <div class="os">
-    <div class="bar"><div><b>æ.store</b> · GOSPEL · PICO OS</div><div><span class="dot" id="dot"></span><span id="status">--</span> · <span id="clock">--:--</span></div></div>
-    <div class="hero"><div class="k">THE GOSPEL BOOKSTORE · LAREDO, TX</div><h1>Libros <span>evangélicos</span></h1></div>
+    <div class="bar"><div><b>æ.store</b> · PICO OS</div><div><span class="dot" id="dot"></span><span id="status">--</span> · <span id="clock">--:--</span><button class="tg" id="lang" aria-label="Language">EN</button><button class="tg" id="theme" aria-label="Theme">☀</button></div></div>
+    <div class="hero"><div class="k" id="kick">LAREDO, TX · LIBROS EVANGÉLICOS</div><h1><span class="l">L://</span><span>Gospel</span>_Bookstore</h1></div>
     <div class="tick" id="tick"></div>
-    <div class="search"><input id="q" type="search" placeholder="Buscar biblias, libros, regalos..." autocomplete="off"></div>
+    <div class="search"><input id="q" type="search" placeholder="" autocomplete="off"></div>
     <div class="chips" id="chips"></div>
     <div class="view" id="view"><div class="count" id="count"></div><div class="grid" id="grid"></div>
-      <div class="foot">Precios y existencias de librosevangelicos.com · <span id="snap"></span><br><a href="https://lutheraninstitute.github.io/">L:// Red de tiendas</a> · Many Peoples · One Gospel · ☩</div>
+      <div class="foot"><span id="ft"></span><br><a href="https://lutheraninstitute.github.io/">L://</a> · Many Peoples · One Gospel · ☩</div>
     </div>
   </div>
-  <div class="cli" id="cli"><div class="log" id="log"></div><form id="cf"><span>æ&gt;</span><input id="ci" placeholder="/buscar biblia · /ayuda" autocomplete="off" enterkeyhint="send"></form></div>
+  <div class="cli" id="cli"><div class="log" id="log"></div><form id="cf"><span>æ&gt;</span><input id="ci" placeholder="/buscar biblia · /ayuda · /en" autocomplete="off" enterkeyhint="send"></form></div>
   <nav class="dock">
-    <button class="on" data-a="store"><i>🏬</i>TIENDA</button>
-    <button data-a="cart"><i>🛒</i>CARRITO<span class="badge" id="badge" hidden>0</span></button>
+    <button class="on" data-a="store"><i>🏬</i><b data-i="nStore">TIENDA</b></button>
+    <button data-a="cart"><i>🛒</i><b data-i="nCart">CARRITO</b><span class="badge" id="badge" hidden>0</span></button>
     <button class="orb" data-a="cli" aria-label="Omnicursor">æ</button>
-    <button data-a="visit"><i>📍</i>VISÍTANOS</button>
+    <button data-a="visit"><i>📍</i><b data-i="nVisit">VISÍTANOS</b></button>
     <button data-a="about"><i>✝️</i>GOSPEL</button>
   </nav>
   <div class="sheet" id="sheet"><div class="pane" id="pane"></div></div>
@@ -122,61 +133,78 @@ html,body{height:100%;background:#000;color:var(--white);font-family:var(--sans)
 </div>
 <script>
 (function(){'use strict';
-var SHOP='https://librosevangelicos.com',SNAP='15 oct 2026';
+var SHOP='https://librosevangelicos.com';
+var T={es:{kick:'LAREDO, TX · LIBROS EVANGÉLICOS',ph:'Buscar biblias, libros, regalos...',open:'ABIERTO',closed:'CERRADO',items:' artículos',ft:'Precios y existencias de librosevangelicos.com · actualizado 15 oct 2026',none:'Sin resultados. Prueba otra palabra o llama al (956) 722-4047.',instore:'SOLO EN TIENDA',instoreLong:'Disponible solo en la tienda de Laredo.',instoreT:'Solo en tienda física',add:'Agregar al carrito',view:'Ver en librosevangelicos.com ↗',cart:'🛒 Carrito',empty:'Tu carrito está vacío.',keep:'Seguir explorando',sub:'Subtotal',pay:'Pagar en librosevangelicos.com →',payNote:'El pago se hace en la tienda oficial, donde ves envío o recogida en Laredo y el total final antes de aprobar. Tú decides. 🫵',visit:'📍 Visítanos',days:'Lun–Sáb',sun:'Domingo',shut:'Cerrado',hrs:'10:00 a. m. – 6:00 p. m.',pick:'Recogida local disponible. Club de lectura en español e inglés.',call:'Llamar (956) 722-4047',dir:'Cómo llegar ↗',about1:'Biblias, libros cristianos, devocionales y regalos de fe, en español e inglés, desde la frontera para EE. UU. y Latinoamérica.',about2:'Parte de la red de tiendas y de los LATAM Mission Partners: Sínodo · Misión · Instituto · Omnimedios.',club:'Club de lectura ↗',hist:'Nuestra historia ↗',nStore:'TIENDA',nCart:'CARRITO',nVisit:'VISÍTANOS',fail:'No se pudo cargar el catálogo. Visita librosevangelicos.com',
+help:'/buscar <texto> · /cat <categoría> · /carrito · /pagar · /visitar · /horario · /llamar · /en · /día · /noche',hello:'L://Gospel_Bookstore en línea. ',res:' resultados para ',emptyC:'Carrito vacío.',opening:'Abriendo la tienda oficial. Tú apruebas el pago allí.',hours:'Lun–Sáb 10–18 · Dom cerrado · ahora: ',cats:'Categorías: ',
+c:{Todos:'Todos',Biblias:'Biblias',Libros:'Libros',Regalos:'Regalos',Joyas:'Joyas',Iglesia:'Iglesia','Niños':'Niños',Otros:'Otros'},
+v:[['Lámpara es a mis pies tu palabra, y lumbrera a mi camino.','Salmos 119:105'],['Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito...','Juan 3:16'],['El justo por la fe vivirá.','Romanos 1:17'],['Escudriñad las Escrituras.','Juan 5:39'],['La palabra del Dios nuestro permanece para siempre.','Isaías 40:8']]},
+en:{kick:'LAREDO, TX · CHRISTIAN BOOKS',ph:'Search bibles, books, gifts...',open:'OPEN',closed:'CLOSED',items:' items',ft:'Prices and stock from librosevangelicos.com · updated Oct 15, 2026',none:'No results. Try another word or call (956) 722-4047.',instore:'IN STORE ONLY',instoreLong:'Available only at the Laredo store.',instoreT:'In store only',add:'Add to cart',view:'View on librosevangelicos.com ↗',cart:'🛒 Cart',empty:'Your cart is empty.',keep:'Keep browsing',sub:'Subtotal',pay:'Check out on librosevangelicos.com →',payNote:'Payment happens on the official store, where you see shipping or Laredo pickup and the final total before you approve. You decide. 🫵',visit:'📍 Visit us',days:'Mon–Sat',sun:'Sunday',shut:'Closed',hrs:'10:00 am – 6:00 pm',pick:'Local pickup available. Book club in Spanish and English.',call:'Call (956) 722-4047',dir:'Directions ↗',about1:'Bibles, Christian books, devotionals and gifts of faith, in Spanish and English, from the border to the U.S. and Latin America.',about2:'Part of the store network and the LATAM Mission Partners: Synod · Mission · Institute · Omnimedia.',club:'Book club ↗',hist:'Our history ↗',nStore:'STORE',nCart:'CART',nVisit:'VISIT',fail:'Could not load the catalog. Visit librosevangelicos.com',
+help:'/search <text> · /cat <category> · /cart · /checkout · /visit · /hours · /call · /es · /day · /night',hello:'L://Gospel_Bookstore online. ',res:' results for ',emptyC:'Cart is empty.',opening:'Opening the official store. You approve payment there.',hours:'Mon–Sat 10–6 · Sun closed · now: ',cats:'Categories: ',
+c:{Todos:'All',Biblias:'Bibles',Libros:'Books',Regalos:'Gifts',Joyas:'Jewelry',Iglesia:'Church','Niños':'Kids',Otros:'Other'},
+v:[['Thy word is a lamp unto my feet, and a light unto my path.','Psalm 119:105'],['For God so loved the world, that he gave his only begotten Son...','John 3:16'],['The just shall live by faith.','Romans 1:17'],['Search the scriptures.','John 5:39'],['The word of our God shall stand for ever.','Isaiah 40:8']]}};
 var CATS=['Todos','Biblias','Libros','Regalos','Joyas','Iglesia','Niños','Otros'];
-var VERSES=[['Lámpara es a mis pies tu palabra, y lumbrera a mi camino.','Salmos 119:105'],['Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito...','Juan 3:16'],['El justo por la fe vivirá.','Romanos 1:17'],['Escudriñad las Escrituras.','Juan 5:39'],['La palabra del Dios nuestro permanece para siempre.','Isaías 40:8']];
-var P=[],cat='Todos',cart=JSON.parse(localStorage.getItem('gospel_cart')||'[]');
+var L=localStorage.getItem('gospel_lang')||((navigator.language||'es').slice(0,2)==='en'?'en':'es');
+var hour=+new Date().toLocaleString('en-US',{timeZone:'America/Chicago',hour:'numeric',hour12:false});
+var TH=localStorage.getItem('gospel_theme')||(hour>=7&&hour<19?'day':'night');
+var P=[],cat='Todos',cart=JSON.parse(localStorage.getItem('gospel_cart')||'[]'),isOpen=false;
 var $=function(i){return document.getElementById(i)};
+function t(k){return T[L][k]}
+function cn(c){return T[L].c[c]||c}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function money(n){return '$'+n.toFixed(2)}
-function toast(t){var e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1400)}
+function toast(x){var e=$('toast');e.textContent=x;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1400)}
 function save(){localStorage.setItem('gospel_cart',JSON.stringify(cart));var n=cart.reduce(function(s,i){return s+i.q},0);$('badge').textContent=n;$('badge').hidden=!n}
 function find(v){return P.find(function(p){return p.v===v})}
-function add(v){var p=find(v);if(!p)return;if(p.s){toast('Solo en tienda física');return}var e=cart.find(function(i){return i.v===v});if(e)e.q++;else cart.push({v:v,q:1});save();toast('+1 · '+p.t.slice(0,28))}
+function add(v){var p=find(v);if(!p)return;if(p.s){toast(t('instoreT'));return}var e=cart.find(function(i){return i.v===v});if(e)e.q++;else cart.push({v:v,q:1});save();toast('+1 · '+p.t.slice(0,28))}
 function total(){return cart.reduce(function(s,i){var p=find(i.v);return s+(p?p.p*i.q:0)},0)}
 function checkoutUrl(){return SHOP+'/cart/'+cart.map(function(i){return i.v+':'+i.q}).join(',')}
-// clock + open state (America/Chicago, Mon–Sat 10–18)
-function tickClock(){var f=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Chicago',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false});var parts={};f.formatToParts(new Date()).forEach(function(x){parts[x.type]=x.value});$('clock').textContent=parts.hour+':'+parts.minute;var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}));var h=d.getHours()+d.getMinutes()/60,open=d.getDay()>=1&&d.getDay()<=6&&h>=10&&h<18;$('status').textContent=open?'ABIERTO':'CERRADO';$('dot').className='dot'+(open?' on':'')}
-var vi=0;function verse(){var v=VERSES[vi++%VERSES.length];$('tick').innerHTML='“'+esc(v[0])+'” <em>— '+esc(v[1])+'</em>'}
-function chips(){$('chips').innerHTML=CATS.filter(function(c){return c==='Todos'||P.some(function(p){return p.c===c})}).map(function(c){return '<button class="chip'+(c===cat?' on':'')+'" data-c="'+c+'">'+c+'</button>'}).join('')}
+function tickClock(){var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}));var h=d.getHours()+d.getMinutes()/60;isOpen=d.getDay()>=1&&d.getDay()<=6&&h>=10&&h<18;$('clock').textContent=('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);$('status').textContent=isOpen?t('open'):t('closed');$('dot').className='dot'+(isOpen?' on':'')}
+var vi=0;function verse(step){if(step)vi++;var v=t('v')[vi%5];$('tick').innerHTML='“'+esc(v[0])+'” <em>— '+esc(v[1])+'</em>'}
+function chips(){$('chips').innerHTML=CATS.filter(function(c){return c==='Todos'||P.some(function(p){return p.c===c})}).map(function(c){return '<button class="chip'+(c===cat?' on':'')+'" data-c="'+c+'">'+cn(c)+'</button>'}).join('')}
 function list(){var q=$('q').value.trim().toLowerCase();return P.filter(function(p){return(cat==='Todos'||p.c===cat)&&(!q||p.t.toLowerCase().indexOf(q)>=0||p.d.toLowerCase().indexOf(q)>=0)})}
-function grid(){var L=list();$('count').textContent=L.length+' artículos'+(cat!=='Todos'?' · '+cat:'');$('grid').innerHTML=L.map(function(p){return '<div class="card" data-v="'+p.v+'"><div class="ph"><img loading="lazy" src="'+esc(p.i)+'" alt="'+esc(p.t)+'"></div><div class="ci"><div class="ct">'+esc(p.t)+'</div>'+(p.s?'<div class="tag">SOLO EN TIENDA</div>':'')+'<div class="cr"><span class="pr">'+money(p.p)+'</span>'+(p.s?'':'<button class="add" data-add="'+p.v+'" aria-label="Agregar">+</button>')+'</div></div></div>'}).join('')||'<p class="note">Sin resultados. Prueba otra palabra o llama al (956) 722-4047.</p>'}
-function open(html){$('pane').innerHTML='<button class="x" data-close>✕</button>'+html;$('sheet').classList.add('open')}
-function close(){$('sheet').classList.remove('open')}
-function product(v){var p=find(v);if(!p)return;open('<img class="big" src="'+esc(p.i.replace('width=360','width=720'))+'" alt=""><h2>'+esc(p.t)+'</h2><div class="pr" style="font-size:18px">'+money(p.p)+'</div>'+(p.d?'<p class="desc">'+esc(p.d)+'</p>':'<p class="desc">'+esc(p.c)+'</p>')+(p.s?'<p class="note">Disponible solo en la tienda de Laredo.</p>':'<button class="btn" data-add="'+p.v+'">Agregar al carrito</button>')+'<a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/products/'+esc(p.h)+'">Ver en librosevangelicos.com ↗</a>')}
-function showCart(){if(!cart.length){open('<h2>🛒 Carrito</h2><p class="desc">Tu carrito está vacío.</p><button class="btn ghost" data-close>Seguir explorando</button>');return}
+function grid(){if(!P.length)return;var R=list();$('count').textContent=R.length+t('items')+(cat!=='Todos'?' · '+cn(cat):'');$('grid').innerHTML=R.map(function(p){return '<div class="card" data-v="'+p.v+'"><div class="ph"><img loading="lazy" src="'+esc(p.i)+'" alt="'+esc(p.t)+'"></div><div class="ci"><div class="ct">'+esc(p.t)+'</div>'+(p.s?'<div class="tag">'+t('instore')+'</div>':'')+'<div class="cr"><span class="pr">'+money(p.p)+'</span>'+(p.s?'':'<button class="add" data-add="'+p.v+'" aria-label="'+t('add')+'">+</button>')+'</div></div></div>'}).join('')||'<p class="note">'+t('none')+'</p>'}
+var cur=null;
+function open(html,id){cur=id;$('pane').innerHTML='<button class="x" data-close>✕</button>'+html;$('sheet').classList.add('open')}
+function close(){cur=null;$('sheet').classList.remove('open')}
+function product(v){var p=find(v);if(!p)return;open('<img class="big" src="'+esc(p.i.replace('width=360','width=720'))+'" alt=""><h2>'+esc(p.t)+'</h2><div class="pr" style="font-size:18px">'+money(p.p)+'</div><p class="desc">'+esc(p.d||cn(p.c))+'</p>'+(p.s?'<p class="note">'+t('instoreLong')+'</p>':'<button class="btn" data-add="'+p.v+'">'+t('add')+'</button>')+'<a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/products/'+esc(p.h)+'">'+t('view')+'</a>',['p',v])}
+function showCart(){if(!cart.length){open('<h2>'+t('cart')+'</h2><p class="desc">'+t('empty')+'</p><button class="btn ghost" data-close>'+t('keep')+'</button>',['c']);return}
 var rows=cart.map(function(i){var p=find(i.v);if(!p)return '';return '<div class="li"><img src="'+esc(p.i)+'" alt=""><div class="n">'+esc(p.t)+'<br><span class="pr">'+money(p.p*i.q)+'</span></div><div class="q"><button data-dq="'+i.v+'">−</button>'+i.q+'<button data-iq="'+i.v+'">+</button></div></div>'}).join('');
-open('<h2>🛒 Carrito</h2>'+rows+'<div class="tot"><span>Subtotal</span><span>'+money(total())+'</span></div><a class="btn" target="_blank" rel="noopener" href="'+checkoutUrl()+'">Pagar en librosevangelicos.com →</a><p class="note">El pago se hace en la tienda oficial, donde ves envío o recogida en Laredo y el total final antes de aprobar. Tú decides. 🫵</p>')}
-function visit(){open('<h2>📍 Visítanos</h2><div class="info"><b>The Gospel Bookstore</b><br>1219 Baltimore St, Laredo, TX 78041</div><div class="hours"><span>Lun–Sáb</span><span>10:00 a. m. – 6:00 p. m.</span><span>Domingo</span><span>Cerrado</span></div><div class="info">Recogida local disponible. Club de lectura en español e inglés.</div><a class="btn" href="tel:+19567224047">Llamar (956) 722-4047</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.apple.com/directions?destination=1219%20Baltimore%20St%2C%20Laredo%2C%20TX%2078041">Cómo llegar ↗</a><a class="btn ghost" href="mailto:Info@LibrosEvangelicos.com">Info@LibrosEvangelicos.com</a>')}
-function about(){open('<h2>✝️ Gospel</h2><p class="desc">Biblias, libros cristianos, devocionales y regalos de fe, en español e inglés, desde la frontera para EE. UU. y Latinoamérica.</p><p class="desc">Parte de la red de tiendas y de los LATAM Mission Partners: Sínodo · Misión · Instituto · Omnimedios.</p><a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/pages/book-club">Club de lectura ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://lutheraninstitute.github.io/historia/">Nuestra historia ↗</a><p class="note">L:// Aprender · æ:// Construir · æQR:// Compartir</p>')}
-// Omnicursor
-function log(t,me){var d=document.createElement('div');if(me)d.className='me';d.textContent=(me?'æ> ':'')+t;$('log').appendChild(d);$('log').scrollTop=1e6}
-var HELP='/buscar <texto> · /cat <Biblias|Libros|Regalos|Joyas|Iglesia|Niños> · /carrito · /pagar · /visitar · /horario · /llamar';
+open('<h2>'+t('cart')+'</h2>'+rows+'<div class="tot"><span>'+t('sub')+'</span><span>'+money(total())+'</span></div><a class="btn" target="_blank" rel="noopener" href="'+checkoutUrl()+'">'+t('pay')+'</a><p class="note">'+t('payNote')+'</p>',['c'])}
+function visit(){open('<h2>'+t('visit')+'</h2><div class="info"><b>L://Gospel_Bookstore</b><br>1219 Baltimore St, Laredo, TX 78041</div><div class="hours"><span>'+t('days')+'</span><span>'+t('hrs')+'</span><span>'+t('sun')+'</span><span>'+t('shut')+'</span></div><div class="info">'+t('pick')+'</div><a class="btn" href="tel:+19567224047">'+t('call')+'</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.apple.com/directions?destination=1219%20Baltimore%20St%2C%20Laredo%2C%20TX%2078041">'+t('dir')+'</a><a class="btn ghost" href="mailto:Info@LibrosEvangelicos.com">Info@LibrosEvangelicos.com</a>',['v'])}
+function about(){open('<h2>✝️ Gospel</h2><p class="desc">'+t('about1')+'</p><p class="desc">'+t('about2')+'</p><a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/pages/book-club">'+t('club')+'</a><a class="btn ghost" target="_blank" rel="noopener" href="https://lutheraninstitute.github.io/historia/">'+t('hist')+'</a><p class="note">L:// Aprender · æ:// Construir · æQR:// Compartir</p>',['a'])}
+function reopen(){if(!cur)return;var k=cur[0];if(k==='p')product(cur[1]);if(k==='c')showCart();if(k==='v')visit();if(k==='a')about()}
+function setLang(l){L=l;localStorage.setItem('gospel_lang',l);document.documentElement.lang=l;$('lang').textContent=l==='es'?'EN':'ES';$('kick').textContent=t('kick');$('q').placeholder=t('ph');$('ft').textContent=t('ft');document.querySelectorAll('[data-i]').forEach(function(e){e.textContent=t(e.dataset.i)});tickClock();verse();chips();grid();reopen()}
+function setTheme(m){TH=m;localStorage.setItem('gospel_theme',m);document.querySelector('.device').classList.toggle('day',m==='day');$('theme').textContent=m==='day'?'☾':'☀';document.querySelector('meta[name=theme-color]').content=m==='day'?'#f6f1e3':'#050516'}
+function log(x,me){var d=document.createElement('div');if(me)d.className='me';d.textContent=(me?'æ> ':'')+x;$('log').appendChild(d);$('log').scrollTop=1e6}
 function cmd(s){log(s,1);var m=s.trim().replace(/^\/?✨?\s*/,'').split(/\s+/),c=(m.shift()||'').toLowerCase(),a=m.join(' ');
-if(c==='buscar'||c==='search'){$('q').value=a;cat='Todos';chips();grid();log(list().length+' resultados para “'+a+'”.')}
-else if(c==='cat'){var k=CATS.find(function(x){return x.toLowerCase()===a.toLowerCase()});if(k){cat=k;chips();grid();log(k+': '+list().length+' artículos.')}else log('Categorías: '+CATS.join(', '))}
-else if(c==='carrito'||c==='cart'){showCart();log(cart.length?'Subtotal '+money(total())+'.':'Carrito vacío.')}
-else if(c==='pagar'||c==='checkout'){if(!cart.length)log('Carrito vacío.');else{log('Abriendo la tienda oficial. Tú apruebas el pago allí.');window.open(checkoutUrl(),'_blank','noopener')}}
-else if(c==='visitar'||c==='mapa'){visit();log('1219 Baltimore St, Laredo, TX.')}
-else if(c==='horario'){log('Lun–Sáb 10–18 · Dom cerrado · ahora: '+$('status').textContent)}
-else if(c==='llamar'){location.href='tel:+19567224047'}
-else log(HELP)}
-document.addEventListener('click',function(e){var t=e.target.closest('[data-add],[data-v],[data-c],[data-a],[data-close],[data-iq],[data-dq]');if(!t)return;
-if(t.dataset.add){e.stopPropagation();add(+t.dataset.add);return}
-if(t.dataset.iq){add(+t.dataset.iq);showCart();return}
-if(t.dataset.dq){var i=cart.find(function(x){return x.v===+t.dataset.dq});if(i){i.q--;if(i.q<1)cart=cart.filter(function(x){return x!==i})}save();showCart();return}
-if(t.hasAttribute('data-close')){close();return}
-if(t.dataset.v){product(+t.dataset.v);return}
-if(t.dataset.c){cat=t.dataset.c;chips();grid();$('view').scrollTop=0;return}
-var a=t.dataset.a;if(a){document.querySelectorAll('.dock button').forEach(function(b){b.classList.toggle('on',b===t&&a!=='cli')});
+if(c==='buscar'||c==='search'){$('q').value=a;cat='Todos';chips();grid();log(list().length+t('res')+'“'+a+'”.')}
+else if(c==='cat'){var k=CATS.find(function(x){return x.toLowerCase()===a.toLowerCase()||cn(x).toLowerCase()===a.toLowerCase()||T.en.c[x].toLowerCase()===a.toLowerCase()});if(k){cat=k;chips();grid();log(cn(k)+': '+list().length+t('items'))}else log(t('cats')+CATS.map(cn).join(', '))}
+else if(c==='carrito'||c==='cart'){showCart();log(cart.length?t('sub')+' '+money(total()):t('emptyC'))}
+else if(c==='pagar'||c==='checkout'){if(!cart.length)log(t('emptyC'));else{log(t('opening'));window.open(checkoutUrl(),'_blank','noopener')}}
+else if(c==='visitar'||c==='visit'||c==='mapa'||c==='map'){visit();log('1219 Baltimore St, Laredo, TX')}
+else if(c==='horario'||c==='hours'){log(t('hours')+$('status').textContent)}
+else if(c==='llamar'||c==='call'){location.href='tel:+19567224047'}
+else if(c==='en'||c==='es'){setLang(c);log(t('hello'))}
+else if(c==='día'||c==='dia'||c==='day'){setTheme('day')}
+else if(c==='noche'||c==='night'){setTheme('night')}
+else log(t('help'))}
+document.addEventListener('click',function(e){var x=e.target.closest('[data-add],[data-v],[data-c],[data-a],[data-close],[data-iq],[data-dq],#lang,#theme');if(!x)return;
+if(x.id==='lang'){setLang(L==='es'?'en':'es');return}
+if(x.id==='theme'){setTheme(TH==='day'?'night':'day');return}
+if(x.dataset.add){e.stopPropagation();add(+x.dataset.add);return}
+if(x.dataset.iq){add(+x.dataset.iq);showCart();return}
+if(x.dataset.dq){var i=cart.find(function(y){return y.v===+x.dataset.dq});if(i){i.q--;if(i.q<1)cart=cart.filter(function(y){return y!==i})}save();showCart();return}
+if(x.hasAttribute('data-close')){close();return}
+if(x.dataset.v){product(+x.dataset.v);return}
+if(x.dataset.c){cat=x.dataset.c;chips();grid();$('view').scrollTop=0;return}
+var a=x.dataset.a;if(a){document.querySelectorAll('.dock button').forEach(function(b){b.classList.toggle('on',b===x&&a!=='cli')});
 if(a==='cli'){$('cli').classList.toggle('open');if($('cli').classList.contains('open'))$('ci').focus()}else{$('cli').classList.remove('open');if(a==='store')close();if(a==='cart')showCart();if(a==='visit')visit();if(a==='about')about()}}});
 $('sheet').addEventListener('click',function(e){if(e.target===this)close()});
 $('q').addEventListener('input',grid);
 $('cf').addEventListener('submit',function(e){e.preventDefault();var v=$('ci').value;if(v.trim())cmd(v);$('ci').value=''});
-$('snap').textContent='actualizado '+SNAP;
-tickClock();setInterval(tickClock,30000);verse();setInterval(verse,8000);
-log('æ.store · Gospel en línea. '+HELP);
-fetch('catalog.json').then(function(r){return r.json()}).then(function(d){P=d;chips();grid();save()}).catch(function(){$('count').textContent='No se pudo cargar el catálogo. Visita librosevangelicos.com'});
+setTheme(TH);setLang(L);setInterval(tickClock,30000);setInterval(function(){verse(1)},8000);
+log(t('hello')+t('help'));
+fetch('catalog.json').then(function(r){return r.json()}).then(function(d){P=d;chips();grid();save()}).catch(function(){$('count').textContent=t('fail')});
 })();
 </script>
 </body>
