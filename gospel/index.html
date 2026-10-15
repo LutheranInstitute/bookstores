@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>æ.store · Gospel · Pico OS</title>
+<meta name="description" content="The Gospel Bookstore · Laredo, TX · Biblias, libros cristianos y regalos. Pico OS surface de la red de tiendas.">
+<meta name="theme-color" content="#050516">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050516;--panel:#0b0c1d;--panel2:#10122a;--lime:#b4ff2e;--cyan:#00eaff;--violet:#8367ff;--gold:#e0b84a;--white:#f5f6fa;--soft:#b5b8c6;--muted:#65687c;--line:rgba(86,94,255,.23);--line2:rgba(86,94,255,.42);--mono:'JetBrains Mono',ui-monospace,monospace;--cond:'Barlow Condensed',sans-serif;--sans:'Space Grotesk',system-ui,sans-serif;--vh:100dvh}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#000;color:var(--white);font-family:var(--sans);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.device{position:relative;width:min(100vw,calc(var(--vh)*9/16));height:var(--vh);overflow:hidden;background:var(--bg)}
+@media (min-width:700px){.device{height:calc(var(--vh)*.94);width:calc(var(--vh)*.94*9/16);border-radius:18px;border-left:5px solid #10156d;border-right:5px solid #10156d;box-shadow:0 25px 70px rgba(0,0,0,.9)}}
+.atm{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(48px);opacity:.22;animation:drift 20s ease-in-out infinite alternate}
+.blob:nth-child(1){width:180px;height:180px;background:#2934ff;top:-6%;left:-8%}
+.blob:nth-child(2){width:140px;height:140px;background:var(--cyan);top:35%;right:-12%;animation-duration:24s}
+.blob:nth-child(3){width:150px;height:150px;background:var(--gold);bottom:6%;left:6%;animation-duration:17s}
+@keyframes drift{to{transform:translate(24px,-20px) scale(1.08)}}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:22px 22px}
+.scan{position:absolute;left:0;right:0;top:-20%;height:20%;background:linear-gradient(180deg,transparent,rgba(69,79,255,.06),transparent);animation:scan 8s linear infinite}
+@keyframes scan{to{transform:translateY(600%)}}
+.os{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:calc(8px + env(safe-area-inset-top)) 12px 6px;font:700 10px var(--mono);letter-spacing:.08em;color:var(--soft)}
+.bar b{color:var(--gold)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:middle;background:var(--muted)}
+.dot.on{background:var(--lime);box-shadow:0 0 8px var(--lime)}
+.hero{padding:6px 14px 8px}
+.hero .k{font:700 10px var(--mono);color:var(--cyan);letter-spacing:.14em}
+.hero h1{font:800 34px/0.95 var(--cond);letter-spacing:.01em;text-transform:uppercase}
+.hero h1 span{color:var(--gold)}
+.tick{margin:4px 14px 8px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(11,12,29,.7);font:400 11px/1.35 var(--mono);color:var(--soft);min-height:42px}
+.tick em{color:var(--gold);font-style:normal}
+.search{display:flex;gap:6px;padding:0 14px}
+.search input{flex:1;background:var(--panel);border:1px solid var(--line2);border-radius:10px;color:var(--white);font:400 13px var(--mono);padding:9px 10px;outline:none}
+.search input:focus{border-color:var(--cyan)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 14px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font:700 11px var(--mono);padding:6px 10px;border-radius:20px;border:1px solid var(--line2);background:transparent;color:var(--soft);cursor:pointer}
+.chip.on{background:var(--gold);border-color:var(--gold);color:#120d00}
+.view{flex:1;overflow-y:auto;padding:2px 14px 90px;scrollbar-width:thin}
+.count{font:400 10px var(--mono);color:var(--muted);margin:2px 0 8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:border-color .2s,transform .2s}
+.card:active{transform:scale(.98)}
+.card:hover{border-color:var(--line2)}
+.ph{aspect-ratio:1;background:#fff;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain;color:transparent}
+.ci{padding:8px;display:flex;flex-direction:column;gap:4px;flex:1}
+.ct{font:600 12px/1.25 var(--sans);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:30px}
+.cr{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.pr{font:700 13px var(--mono);color:var(--lime)}
+.add{font:700 16px var(--mono);width:30px;height:30px;border-radius:8px;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer}
+.add:active{background:var(--gold);color:#000}
+.tag{font:700 9px var(--mono);color:var(--cyan)}
+.dock{position:absolute;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:5;display:flex;justify-content:space-around;align-items:center;padding:8px;border:1px solid var(--line2);border-radius:16px;background:rgba(8,8,32,.88);backdrop-filter:blur(10px)}
+.dock button{position:relative;background:none;border:0;color:var(--soft);font:700 9px var(--mono);display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;padding:2px 8px}
+.dock button i{font-style:normal;font-size:20px}
+.dock button.on{color:var(--gold)}
+.badge{position:absolute;top:-4px;right:2px;min-width:16px;height:16px;border-radius:8px;background:var(--lime);color:#000;font:700 9px/16px var(--mono);text-align:center;padding:0 3px}
+.dock .orb{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3,transparent 45%),conic-gradient(var(--gold),var(--cyan),var(--violet),var(--gold));box-shadow:0 0 18px rgba(224,184,74,.45);font:800 18px var(--cond)!important;color:#050516!important;justify-content:center!important}
+.sheet{position:absolute;inset:0;z-index:20;background:rgba(0,0,0,.55);display:none;align-items:flex-end}
+.sheet.open{display:flex}
+.pane{width:100%;max-height:88%;overflow-y:auto;background:var(--panel);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;padding:14px 14px calc(18px + env(safe-area-inset-bottom));animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.pane h2{font:800 24px var(--cond);text-transform:uppercase;letter-spacing:.02em;margin-bottom:8px}
+.x{float:right;background:none;border:1px solid var(--line2);color:var(--soft);border-radius:8px;font:700 12px var(--mono);padding:4px 8px;cursor:pointer}
+.big{width:100%;aspect-ratio:1;max-height:300px;object-fit:contain;background:#fff;border-radius:12px;margin-bottom:10px}
+.desc{font:400 13px/1.5 var(--sans);color:var(--soft);margin:6px 0 12px}
+.btn{display:block;width:100%;text-align:center;padding:12px;border-radius:12px;border:0;background:var(--gold);color:#120d00;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;margin-top:8px}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--white)}
+.li{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.li img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:8px}
+.li .n{flex:1;font:600 12px/1.3 var(--sans)}
+.q{display:flex;align-items:center;gap:6px;font:700 12px var(--mono)}
+.q button{width:24px;height:24px;border-radius:6px;border:1px solid var(--line2);background:none;color:var(--white);cursor:pointer}
+.tot{display:flex;justify-content:space-between;font:700 15px var(--mono);margin:12px 0 2px}
+.note{font:400 11px/1.45 var(--mono);color:var(--muted);margin-top:8px}
+.info{font:400 13px/1.6 var(--sans);color:var(--soft)}
+.info b{color:var(--white)}
+.info a{color:var(--cyan)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font:400 12px var(--mono);margin:8px 0}
+.cli{position:absolute;left:10px;right:10px;bottom:calc(78px + env(safe-area-inset-bottom));z-index:6;display:none;border:1px solid var(--gold);border-radius:14px;background:rgba(5,5,22,.96);padding:10px;font:400 11px/1.45 var(--mono)}
+.cli.open{display:block}
+.log{max-height:150px;overflow-y:auto;color:var(--soft);margin-bottom:6px;white-space:pre-wrap}
+.log .me{color:var(--gold)}
+.cli form{display:flex;gap:6px;align-items:center}
+.cli span{color:var(--lime);font-weight:700}
+.cli input{flex:1;background:none;border:0;color:var(--white);font:400 13px var(--mono);outline:none}
+.toast{position:absolute;top:60px;left:50%;transform:translateX(-50%);z-index:30;background:var(--lime);color:#000;font:700 11px var(--mono);padding:7px 12px;border-radius:20px;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.on{opacity:1}
+.foot{text-align:center;font:400 10px/1.6 var(--mono);color:var(--muted);margin-top:18px}
+.foot a{color:var(--soft)}
+</style>
+</head>
+<body>
+<div class="device">
+  <div class="atm"><div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="grid-bg"></div><div class="scan"></div></div>
+  <div class="os">
+    <div class="bar"><div><b>æ.store</b> · GOSPEL · PICO OS</div><div><span class="dot" id="dot"></span><span id="status">--</span> · <span id="clock">--:--</span></div></div>
+    <div class="hero"><div class="k">THE GOSPEL BOOKSTORE · LAREDO, TX</div><h1>Libros <span>evangélicos</span></h1></div>
+    <div class="tick" id="tick"></div>
+    <div class="search"><input id="q" type="search" placeholder="Buscar biblias, libros, regalos..." autocomplete="off"></div>
+    <div class="chips" id="chips"></div>
+    <div class="view" id="view"><div class="count" id="count"></div><div class="grid" id="grid"></div>
+      <div class="foot">Precios y existencias de librosevangelicos.com · <span id="snap"></span><br><a href="https://lutheraninstitute.github.io/">L:// Red de tiendas</a> · Many Peoples · One Gospel · ☩</div>
+    </div>
+  </div>
+  <div class="cli" id="cli"><div class="log" id="log"></div><form id="cf"><span>æ&gt;</span><input id="ci" placeholder="/buscar biblia · /ayuda" autocomplete="off" enterkeyhint="send"></form></div>
+  <nav class="dock">
+    <button class="on" data-a="store"><i>🏬</i>TIENDA</button>
+    <button data-a="cart"><i>🛒</i>CARRITO<span class="badge" id="badge" hidden>0</span></button>
+    <button class="orb" data-a="cli" aria-label="Omnicursor">æ</button>
+    <button data-a="visit"><i>📍</i>VISÍTANOS</button>
+    <button data-a="about"><i>✝️</i>GOSPEL</button>
+  </nav>
+  <div class="sheet" id="sheet"><div class="pane" id="pane"></div></div>
+  <div class="toast" id="toast"></div>
+</div>
+<script>
+(function(){'use strict';
+var SHOP='https://librosevangelicos.com',SNAP='15 oct 2026';
+var CATS=['Todos','Biblias','Libros','Regalos','Joyas','Iglesia','Niños','Otros'];
+var VERSES=[['Lámpara es a mis pies tu palabra, y lumbrera a mi camino.','Salmos 119:105'],['Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito...','Juan 3:16'],['El justo por la fe vivirá.','Romanos 1:17'],['Escudriñad las Escrituras.','Juan 5:39'],['La palabra del Dios nuestro permanece para siempre.','Isaías 40:8']];
+var P=[],cat='Todos',cart=JSON.parse(localStorage.getItem('gospel_cart')||'[]');
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function money(n){return '$'+n.toFixed(2)}
+function toast(t){var e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1400)}
+function save(){localStorage.setItem('gospel_cart',JSON.stringify(cart));var n=cart.reduce(function(s,i){return s+i.q},0);$('badge').textContent=n;$('badge').hidden=!n}
+function find(v){return P.find(function(p){return p.v===v})}
+function add(v){var p=find(v);if(!p)return;if(p.s){toast('Solo en tienda física');return}var e=cart.find(function(i){return i.v===v});if(e)e.q++;else cart.push({v:v,q:1});save();toast('+1 · '+p.t.slice(0,28))}
+function total(){return cart.reduce(function(s,i){var p=find(i.v);return s+(p?p.p*i.q:0)},0)}
+function checkoutUrl(){return SHOP+'/cart/'+cart.map(function(i){return i.v+':'+i.q}).join(',')}
+// clock + open state (America/Chicago, Mon–Sat 10–18)
+function tickClock(){var f=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Chicago',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false});var parts={};f.formatToParts(new Date()).forEach(function(x){parts[x.type]=x.value});$('clock').textContent=parts.hour+':'+parts.minute;var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}));var h=d.getHours()+d.getMinutes()/60,open=d.getDay()>=1&&d.getDay()<=6&&h>=10&&h<18;$('status').textContent=open?'ABIERTO':'CERRADO';$('dot').className='dot'+(open?' on':'')}
+var vi=0;function verse(){var v=VERSES[vi++%VERSES.length];$('tick').innerHTML='“'+esc(v[0])+'” <em>— '+esc(v[1])+'</em>'}
+function chips(){$('chips').innerHTML=CATS.filter(function(c){return c==='Todos'||P.some(function(p){return p.c===c})}).map(function(c){return '<button class="chip'+(c===cat?' on':'')+'" data-c="'+c+'">'+c+'</button>'}).join('')}
+function list(){var q=$('q').value.trim().toLowerCase();return P.filter(function(p){return(cat==='Todos'||p.c===cat)&&(!q||p.t.toLowerCase().indexOf(q)>=0||p.d.toLowerCase().indexOf(q)>=0)})}
+function grid(){var L=list();$('count').textContent=L.length+' artículos'+(cat!=='Todos'?' · '+cat:'');$('grid').innerHTML=L.map(function(p){return '<div class="card" data-v="'+p.v+'"><div class="ph"><img loading="lazy" src="'+esc(p.i)+'" alt="'+esc(p.t)+'"></div><div class="ci"><div class="ct">'+esc(p.t)+'</div>'+(p.s?'<div class="tag">SOLO EN TIENDA</div>':'')+'<div class="cr"><span class="pr">'+money(p.p)+'</span>'+(p.s?'':'<button class="add" data-add="'+p.v+'" aria-label="Agregar">+</button>')+'</div></div></div>'}).join('')||'<p class="note">Sin resultados. Prueba otra palabra o llama al (956) 722-4047.</p>'}
+function open(html){$('pane').innerHTML='<button class="x" data-close>✕</button>'+html;$('sheet').classList.add('open')}
+function close(){$('sheet').classList.remove('open')}
+function product(v){var p=find(v);if(!p)return;open('<img class="big" src="'+esc(p.i.replace('width=360','width=720'))+'" alt=""><h2>'+esc(p.t)+'</h2><div class="pr" style="font-size:18px">'+money(p.p)+'</div>'+(p.d?'<p class="desc">'+esc(p.d)+'</p>':'<p class="desc">'+esc(p.c)+'</p>')+(p.s?'<p class="note">Disponible solo en la tienda de Laredo.</p>':'<button class="btn" data-add="'+p.v+'">Agregar al carrito</button>')+'<a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/products/'+esc(p.h)+'">Ver en librosevangelicos.com ↗</a>')}
+function showCart(){if(!cart.length){open('<h2>🛒 Carrito</h2><p class="desc">Tu carrito está vacío.</p><button class="btn ghost" data-close>Seguir explorando</button>');return}
+var rows=cart.map(function(i){var p=find(i.v);if(!p)return '';return '<div class="li"><img src="'+esc(p.i)+'" alt=""><div class="n">'+esc(p.t)+'<br><span class="pr">'+money(p.p*i.q)+'</span></div><div class="q"><button data-dq="'+i.v+'">−</button>'+i.q+'<button data-iq="'+i.v+'">+</button></div></div>'}).join('');
+open('<h2>🛒 Carrito</h2>'+rows+'<div class="tot"><span>Subtotal</span><span>'+money(total())+'</span></div><a class="btn" target="_blank" rel="noopener" href="'+checkoutUrl()+'">Pagar en librosevangelicos.com →</a><p class="note">El pago se hace en la tienda oficial, donde ves envío o recogida en Laredo y el total final antes de aprobar. Tú decides. 🫵</p>')}
+function visit(){open('<h2>📍 Visítanos</h2><div class="info"><b>The Gospel Bookstore</b><br>1219 Baltimore St, Laredo, TX 78041</div><div class="hours"><span>Lun–Sáb</span><span>10:00 a. m. – 6:00 p. m.</span><span>Domingo</span><span>Cerrado</span></div><div class="info">Recogida local disponible. Club de lectura en español e inglés.</div><a class="btn" href="tel:+19567224047">Llamar (956) 722-4047</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.apple.com/directions?destination=1219%20Baltimore%20St%2C%20Laredo%2C%20TX%2078041">Cómo llegar ↗</a><a class="btn ghost" href="mailto:Info@LibrosEvangelicos.com">Info@LibrosEvangelicos.com</a>')}
+function about(){open('<h2>✝️ Gospel</h2><p class="desc">Biblias, libros cristianos, devocionales y regalos de fe, en español e inglés, desde la frontera para EE. UU. y Latinoamérica.</p><p class="desc">Parte de la red de tiendas y de los LATAM Mission Partners: Sínodo · Misión · Instituto · Omnimedios.</p><a class="btn ghost" target="_blank" rel="noopener" href="'+SHOP+'/pages/book-club">Club de lectura ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://lutheraninstitute.github.io/historia/">Nuestra historia ↗</a><p class="note">L:// Aprender · æ:// Construir · æQR:// Compartir</p>')}
+// Omnicursor
+function log(t,me){var d=document.createElement('div');if(me)d.className='me';d.textContent=(me?'æ> ':'')+t;$('log').appendChild(d);$('log').scrollTop=1e6}
+var HELP='/buscar <texto> · /cat <Biblias|Libros|Regalos|Joyas|Iglesia|Niños> · /carrito · /pagar · /visitar · /horario · /llamar';
+function cmd(s){log(s,1);var m=s.trim().replace(/^\/?✨?\s*/,'').split(/\s+/),c=(m.shift()||'').toLowerCase(),a=m.join(' ');
+if(c==='buscar'||c==='search'){$('q').value=a;cat='Todos';chips();grid();log(list().length+' resultados para “'+a+'”.')}
+else if(c==='cat'){var k=CATS.find(function(x){return x.toLowerCase()===a.toLowerCase()});if(k){cat=k;chips();grid();log(k+': '+list().length+' artículos.')}else log('Categorías: '+CATS.join(', '))}
+else if(c==='carrito'||c==='cart'){showCart();log(cart.length?'Subtotal '+money(total())+'.':'Carrito vacío.')}
+else if(c==='pagar'||c==='checkout'){if(!cart.length)log('Carrito vacío.');else{log('Abriendo la tienda oficial. Tú apruebas el pago allí.');window.open(checkoutUrl(),'_blank','noopener')}}
+else if(c==='visitar'||c==='mapa'){visit();log('1219 Baltimore St, Laredo, TX.')}
+else if(c==='horario'){log('Lun–Sáb 10–18 · Dom cerrado · ahora: '+$('status').textContent)}
+else if(c==='llamar'){location.href='tel:+19567224047'}
+else log(HELP)}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-add],[data-v],[data-c],[data-a],[data-close],[data-iq],[data-dq]');if(!t)return;
+if(t.dataset.add){e.stopPropagation();add(+t.dataset.add);return}
+if(t.dataset.iq){add(+t.dataset.iq);showCart();return}
+if(t.dataset.dq){var i=cart.find(function(x){return x.v===+t.dataset.dq});if(i){i.q--;if(i.q<1)cart=cart.filter(function(x){return x!==i})}save();showCart();return}
+if(t.hasAttribute('data-close')){close();return}
+if(t.dataset.v){product(+t.dataset.v);return}
+if(t.dataset.c){cat=t.dataset.c;chips();grid();$('view').scrollTop=0;return}
+var a=t.dataset.a;if(a){document.querySelectorAll('.dock button').forEach(function(b){b.classList.toggle('on',b===t&&a!=='cli')});
+if(a==='cli'){$('cli').classList.toggle('open');if($('cli').classList.contains('open'))$('ci').focus()}else{$('cli').classList.remove('open');if(a==='store')close();if(a==='cart')showCart();if(a==='visit')visit();if(a==='about')about()}}});
+$('sheet').addEventListener('click',function(e){if(e.target===this)close()});
+$('q').addEventListener('input',grid);
+$('cf').addEventListener('submit',function(e){e.preventDefault();var v=$('ci').value;if(v.trim())cmd(v);$('ci').value=''});
+$('snap').textContent='actualizado '+SNAP;
+tickClock();setInterval(tickClock,30000);verse();setInterval(verse,8000);
+log('æ.store · Gospel en línea. '+HELP);
+fetch('catalog.json').then(function(r){return r.json()}).then(function(d){P=d;chips();grid();save()}).catch(function(){$('count').textContent='No se pudo cargar el catálogo. Visita librosevangelicos.com'});
+})();
+</script>
+</body>
+</html>
