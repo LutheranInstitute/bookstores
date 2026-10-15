@@ -1,0 +1,27 @@
+{
+  "red": "Gospel Bookstore · Red de tiendas",
+  "tiendas": [
+    {
+      "id": "laredo-baltimore",
+      "nombre": "Gospel Bookstore",
+      "tipo": "librería religiosa",
+      "direccion": "1219 Baltimore St, Laredo, TX 78041, United States",
+      "coordenadas": [
+        27.531749,
+        -99.507595
+      ],
+      "telefono": "+19567224047",
+      "horario": {
+        "lun-vie": "09:00-18:00",
+        "sab": "09:00-17:00",
+        "dom": "cerrado"
+      },
+      "perfiles": {
+        "apple_maps": "https://maps.apple/p/8nW2G-ZCb_tRIP",
+        "google_business": "gestionado en la cuenta de Google Business de Yæl"
+      },
+      "estado": "activa",
+      "fuente": "Apple Maps, 2026-10-15"
+    }
+  ]
+}
