@@ -3,7 +3,10 @@
   "tiendas": [
     {
       "id": "laredo-baltimore",
-      "nombre": "Gospel Bookstore",
+      "nombre": "The Gospel Bookstore",
+      "marca_web": "Libros Evangélicos",
+      "sitio": "https://librosevangelicos.com",
+      "correo": "Info@LibrosEvangelicos.com",
       "tipo": "librería religiosa",
       "direccion": "1219 Baltimore St, Laredo, TX 78041, United States",
       "coordenadas": [
@@ -12,16 +15,18 @@
       ],
       "telefono": "+19567224047",
       "horario": {
-        "lun-vie": "09:00-18:00",
-        "sab": "09:00-17:00",
+        "lun-sab": "10:00-18:00",
         "dom": "cerrado"
       },
       "perfiles": {
         "apple_maps": "https://maps.apple/p/8nW2G-ZCb_tRIP",
-        "google_business": "gestionado en la cuenta de Google Business de Yæl"
+        "google_business": "cuenta de Google Business de Yæl"
       },
+      "pendientes": [
+        "Apple Maps muestra Lun-Vie 9-18 y Sáb 9-17; el sitio dice Lun-Sáb 10-18. Corregir Apple Maps (Apple Business Connect)."
+      ],
       "estado": "activa",
-      "fuente": "Apple Maps, 2026-10-15"
+      "fuente": "librosevangelicos.com y Apple Maps, 2026-10-15"
     }
   ]
 }
