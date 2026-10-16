@@ -1,0 +1,65 @@
+{
+  "schema": "ae.manifest/0.1",
+  "id": "musica",
+  "name": "L://Musica_Store",
+  "kind": "store · agentic environment",
+  "status": "lab only",
+  "address": {
+    "x0:y0:z0:æ0": "latam:musica:store:æ0",
+    "region": "América Latina"
+  },
+  "surface": "https://lutheraninstitute.github.io/bookstores/lab/musica/",
+  "context": {
+    "languages": [
+      "es",
+      "en"
+    ],
+    "themes": [
+      "day",
+      "night"
+    ],
+    "engine": "llm.store (simulado: palabras clave por ánimo/pasaje)"
+  },
+  "capabilities": [
+    "recommend_by_mood",
+    "genre",
+    "country",
+    "listen_links",
+    "playlist"
+  ],
+  "checkout": {
+    "type": "none",
+    "note": "laboratorio sin comercio"
+  },
+  "authority": {
+    "principal": "Yæl Méndez (human root)",
+    "doctrine": [
+      "Evidence ≠ Authority",
+      "Many agents. One principal."
+    ],
+    "agents_may": [
+      "leer catálogo",
+      "buscar",
+      "recomendar",
+      "armar carrito o lista",
+      "abrir issue / PR hacia review"
+    ],
+    "human_only": [
+      "publicar o cambiar precios",
+      "alterar inventario",
+      "procesar órdenes o pagos",
+      "fusionar a main (en vivo)"
+    ],
+    "raise_authority": "æ2/æ3 requieren concesión del principal (passkey) + recibo Witness"
+  },
+  "provenance": {
+    "repo": "https://github.com/LutheranInstitute/bookstores",
+    "source": "lista curada de artistas reales en lab/musica/index.html",
+    "manifest_version": "0.1",
+    "updated": "2026-10-15"
+  },
+  "aeqr": {
+    "resolves_to": "https://lutheraninstitute.github.io/bookstores/lab/musica/ae.json",
+    "note": "conceptual, not scannable until an æQR is issued"
+  }
+}
