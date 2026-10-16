@@ -1,0 +1,29 @@
+{
+  "schema": "ae.network/0.1",
+  "name": "L:// Red de tiendas · æ.store · llm.store",
+  "doctrine": "Stores are agentic environments.",
+  "principal": "Yæl Méndez",
+  "environments": [
+    {
+      "id": "gospel",
+      "name": "L://Gospel_Bookstore",
+      "status": "lab (en vivo: https://lutheraninstitute.github.io/bookstores/gospel/)",
+      "manifest": "https://lutheraninstitute.github.io/bookstores/lab/gospel/ae.json"
+    },
+    {
+      "id": "teologia.ai/gospel_bookstore",
+      "name": "L://teologia.ai/gospel_bookstore",
+      "status": "lab",
+      "manifest": "https://lutheraninstitute.github.io/bookstores/lab/teologia.ai/gospel_bookstore/ae.json"
+    },
+    {
+      "id": "musica",
+      "name": "L://Musica_Store",
+      "status": "lab only",
+      "manifest": "https://lutheraninstitute.github.io/bookstores/lab/musica/ae.json"
+    }
+  ],
+  "next": [
+    "AirPodcast.me · e-books + llm.store model plugins"
+  ]
+}
