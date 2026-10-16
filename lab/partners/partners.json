@@ -1,0 +1,34 @@
+{
+  "schema": "ae.partners/0.1",
+  "motto": "Make something agents want.",
+  "note": "Add a partner by appending one object. compute_credits: what the partner credits to builders (null until agreed).",
+  "partners": [
+    {
+      "id": "doola",
+      "label": "#startabusiness",
+      "sub": "Forma tu LLC con doola · Cli in, llc out",
+      "url": "https://partnersps.doola.com/hhsoqhb23250",
+      "kind": "affiliate",
+      "color": "gold",
+      "compute_credits": null
+    },
+    {
+      "id": "nous",
+      "label": "Nous Portal",
+      "sub": "Hermes · modelos abiertos",
+      "url": "https://portal.nousresearch.com/r/opensource",
+      "kind": "referral",
+      "color": "cyan",
+      "compute_credits": null
+    },
+    {
+      "id": "hark-pro-class",
+      "label": "Clase · Hark Pro",
+      "sub": "Cómo usar Hark Pro · Diplomado",
+      "url": "https://lutheraninstitute.github.io/diplomado-agentico/clases/m1-s2/",
+      "kind": "class",
+      "color": "lime",
+      "compute_credits": null
+    }
+  ]
+}
