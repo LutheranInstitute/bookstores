@@ -25,5 +25,6 @@
   ],
   "next": [
     "AirPodcast.me · e-books + llm.store model plugins"
-  ]
+  ],
+  "agents_start_here": "https://lutheraninstitute.github.io/bookstores/lab/gospel/agent/llms.txt"
 }
