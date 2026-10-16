@@ -37,7 +37,8 @@
     "checkout_link",
     "visit",
     "hours",
-    "call"
+    "call",
+    "agent_catalog"
   ],
   "checkout": {
     "type": "real",
@@ -74,5 +75,10 @@
   "aeqr": {
     "resolves_to": "https://lutheraninstitute.github.io/bookstores/lab/gospel/ae.json",
     "note": "conceptual, not scannable until an æQR is issued"
+  },
+  "agent_endpoints": {
+    "llms.txt": "https://lutheraninstitute.github.io/bookstores/lab/gospel/agent/llms.txt",
+    "catalog": "https://lutheraninstitute.github.io/bookstores/lab/gospel/agent/catalog.json",
+    "cart_template": "https://librosevangelicos.com/cart/{id}:{qty}"
   }
 }
