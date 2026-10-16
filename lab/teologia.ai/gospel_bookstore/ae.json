@@ -1,0 +1,63 @@
+{
+  "schema": "ae.manifest/0.1",
+  "id": "teologia.ai/gospel_bookstore",
+  "name": "L://teologia.ai/gospel_bookstore",
+  "kind": "store · agentic environment",
+  "status": "lab",
+  "address": {
+    "x0:y0:z0:æ0": "teologia.ai:gospel_bookstore:expression:æ0",
+    "domain": "teologia.ai (pendiente de conectar)",
+    "parent": "gospel"
+  },
+  "surface": "https://lutheraninstitute.github.io/bookstores/lab/teologia.ai/gospel_bookstore/",
+  "context": {
+    "languages": [
+      "es",
+      "en"
+    ],
+    "voice": "Ley y Evangelio del día · lecturas por pasaje",
+    "catalog": "hereda gospel/catalog.json"
+  },
+  "capabilities": [
+    "law_gospel_daily",
+    "passage_reading",
+    "search",
+    "cart",
+    "checkout_link"
+  ],
+  "checkout": {
+    "type": "real (heredado de gospel)",
+    "approval": "el comprador aprueba y paga en la tienda oficial"
+  },
+  "authority": {
+    "principal": "Yæl Méndez (human root)",
+    "doctrine": [
+      "Evidence ≠ Authority",
+      "Many agents. One principal."
+    ],
+    "agents_may": [
+      "leer catálogo",
+      "buscar",
+      "recomendar",
+      "armar carrito o lista",
+      "abrir issue / PR hacia review"
+    ],
+    "human_only": [
+      "publicar o cambiar precios",
+      "alterar inventario",
+      "procesar órdenes o pagos",
+      "fusionar a main (en vivo)"
+    ],
+    "raise_authority": "æ2/æ3 requieren concesión del principal (passkey) + recibo Witness"
+  },
+  "provenance": {
+    "repo": "https://github.com/LutheranInstitute/bookstores",
+    "source": "../../../gospel/catalog.json",
+    "manifest_version": "0.1",
+    "updated": "2026-10-15"
+  },
+  "aeqr": {
+    "resolves_to": "https://lutheraninstitute.github.io/bookstores/lab/teologia.ai/gospel_bookstore/ae.json",
+    "note": "conceptual, not scannable until an æQR is issued"
+  }
+}
