@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LAB · L://Musica_Store · æ.store · llm.store</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#050516">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050516;--panel:#0b0c1d;--lime:#b4ff2e;--cyan:#00eaff;--gold:#e0b84a;--white:#f5f6fa;--soft:#b5b8c6;--muted:#65687c;--line:rgba(86,94,255,.23);--line2:rgba(86,94,255,.42);--mono:'JetBrains Mono',monospace;--cond:'Barlow Condensed',sans-serif;--sans:'Space Grotesk',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#000;color:var(--white);font-family:var(--sans);display:flex;justify-content:center}
+.device{position:relative;width:min(100vw,calc(100dvh*9/16));height:100dvh;overflow:hidden;background:var(--bg);display:flex;flex-direction:column}
+.device.day{--bg:#f4efe3;--panel:#fffaf0;--white:#14142a;--soft:#3d3f55;--muted:#7a7c8e;--cyan:#0077a8;--gold:#9a6f00;--lime:#3f7d00}
+@media(min-width:700px){.device{height:94dvh;margin-top:3dvh;width:calc(94dvh*9/16);border-radius:18px;border-left:5px solid #10156d;border-right:5px solid #10156d}}
+.blob{position:absolute;border-radius:50%;filter:blur(50px);opacity:.2;pointer-events:none}
+.top{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;font:700 10px var(--mono);color:var(--soft);z-index:1}
+.top b{color:var(--gold)}.top button{background:none;border:1px solid var(--line2);color:var(--soft);font:700 10px var(--mono);border-radius:6px;padding:3px 7px;margin-left:4px;cursor:pointer}
+.lab{color:var(--lime)}
+header{padding:4px 14px 8px;z-index:1}
+.k{font:700 10px var(--mono);letter-spacing:.14em;color:var(--muted)}
+h1{font:800 34px/1 var(--cond);letter-spacing:.02em}h1 .l{color:var(--cyan)}h1 .g{color:var(--gold)}
+.sub{font:400 11px/1.4 var(--mono);color:var(--soft);margin-top:4px}
+.cli{margin:4px 14px;display:flex;border:1px solid var(--line2);border-radius:10px;background:var(--panel);z-index:1}
+.cli span{font:700 13px var(--mono);color:var(--lime);padding:10px 4px 10px 10px}
+.cli input{flex:1;background:none;border:0;outline:0;color:var(--white);font:400 13px var(--mono);padding:10px 8px}
+.ans{margin:6px 14px 0;font:400 11px/1.45 var(--mono);color:var(--cyan);min-height:16px;z-index:1}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 14px;z-index:1;scrollbar-width:none}
+.chips button{flex:none;background:var(--panel);border:1px solid var(--line);color:var(--soft);font:700 11px var(--mono);border-radius:20px;padding:5px 10px;cursor:pointer}
+.chips button.on{border-color:var(--gold);color:var(--gold)}
+.list{flex:1;overflow-y:auto;padding:0 14px 90px;z-index:1}
+.card{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:10px;margin-bottom:8px}
+.av{flex:none;width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font:800 18px var(--cond);color:#050516}
+.inf{flex:1;min-width:0}.inf b{display:block;font:800 17px var(--cond);letter-spacing:.03em}
+.inf small{font:400 10px var(--mono);color:var(--muted)}.inf p{font:400 11px/1.35 var(--sans);color:var(--soft);margin-top:2px}
+.act{display:flex;flex-direction:column;gap:4px}
+.act a,.act button{font:700 10px var(--mono);text-decoration:none;text-align:center;border:1px solid var(--line2);border-radius:6px;padding:4px 6px;color:var(--cyan);background:none;cursor:pointer}
+.act button.on{color:var(--gold);border-color:var(--gold)}
+.dock{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-around;padding:10px 6px 16px;background:linear-gradient(transparent,var(--bg) 40%);font:700 10px var(--mono);color:var(--soft);z-index:2}
+.dock button{background:none;border:0;color:inherit;font:inherit;cursor:pointer}
+.note{font:400 9px var(--mono);color:var(--muted);text-align:center;margin:10px 0}
+</style>
+</head>
+<body>
+<div class="device" id="dev">
+<div class="blob" style="width:170px;height:170px;background:#2934ff;top:-5%;left:-8%"></div>
+<div class="blob" style="width:150px;height:150px;background:#e0b84a;bottom:8%;right:-10%"></div>
+<div class="top"><div><b>æ.store</b> · llm.store · <b class="lab">LAB</b></div><div><button id="lang">EN</button><button id="theme">☀</button></div></div>
+<header><div class="k" id="kick">L:// RED DE TIENDAS · AMÉRICA LATINA</div><h1><span class="l">L://</span><span class="g">Musica</span>_Store</h1><p class="sub" id="sub">Música cristiana latinoamericana. Escribe lo que necesitas oír.</p></header>
+<div class="cli"><span>&gt;_</span><input id="q" autocomplete="off" placeholder="necesito paz · /urbano · /pais colombia"></div>
+<div class="ans" id="ans"></div>
+<div class="chips" id="chips"></div>
+<div class="list" id="list"></div>
+<div class="dock"><button id="dA">🏬 TIENDA</button><button id="dL">🎧 LISTA <span id="n">0</span></button><button id="dH">æ AYUDA</button></div>
+</div>
+<script>
+var A=[
+['Marcos Witt','México','adoracion',['adoración','alabanza','gozo','fiesta'],'Pionero de la alabanza contemporánea en español.','Pioneer of contemporary Spanish-language worship.'],
+['Jesús Adrián Romero','México','adoracion',['paz','intimidad','consuelo','descanso'],'Canciones íntimas de fe para el camino diario.','Intimate songs of faith for daily life.'],
+['Marcela Gándara','México','adoracion',['consuelo','esperanza','dolor','paz'],'Voz de consuelo y esperanza.','A voice of comfort and hope.'],
+['Marco Barrientos','México','adoracion',['adoración','presencia','espíritu'],'Adoración congregacional y profética.','Congregational, prophetic worship.'],
+['Rojo','México','pop',['jóvenes','gozo','fiesta','energía'],'Pop rock cristiano que marcó a una generación.','Christian pop rock that shaped a generation.'],
+['Majo y Dan','México','pop',['familia','amor','matrimonio','esperanza'],'Dúo de pop y adoración en pareja.','A married pop and worship duo.'],
+['Danilo Montero','Costa Rica','adoracion',['adoración','gracia','presencia'],'Adoración serena y centrada en la gracia.','Calm, grace-centered worship.'],
+['Miel San Marcos','Guatemala','adoracion',['fiesta','gozo','alabanza','energía'],'Alabanza en vivo con fuego guatemalteco.','Live praise with Guatemalan fire.'],
+['Alex Campos','Colombia','pop',['amor','esperanza','jóvenes','perdón'],'Baladas y pop con mensaje de amor de Dios.','Ballads and pop about God\u2019s love.'],
+['Su Presencia','Colombia','adoracion',['presencia','espíritu','adoración'],'Adoración desde Bogotá.','Worship from Bogotá.'],
+['Generación 12','Colombia','adoracion',['jóvenes','fiesta','alabanza'],'Alabanza juvenil de alto impacto.','High-energy youth praise.'],
+['Jaime Murrell','Panamá','clasicos',['himnos','clásicos','fe','tradición'],'Clásicos de la adoración hispana.','Classics of Hispanic worship.'],
+['Christine D\u2019Clario','Puerto Rico','adoracion',['adoración','presencia','sanidad','consuelo'],'Adoración profunda y bilingüe.','Deep, bilingual worship.'],
+['Funky','Puerto Rico','urbano',['urbano','jóvenes','energía','fiesta'],'Pionero del urbano cristiano.','A pioneer of Christian urban music.'],
+['Alex Zurdo','Puerto Rico','urbano',['urbano','jóvenes','fe'],'Rap y reguetón con mensaje.','Rap and reggaeton with a message.'],
+['Redimi2','Rep. Dominicana','urbano',['urbano','energía','jóvenes','perdón'],'Hip hop cristiano dominicano.','Dominican Christian hip hop.'],
+['Barak','Rep. Dominicana','adoracion',['presencia','espíritu','adoración','jóvenes'],'Adoración moderna dominicana.','Modern Dominican worship.'],
+['Lilly Goodman','Rep. Dominicana','pop',['consuelo','fe','esperanza','dolor'],'Baladas de fe con voz poderosa.','Faith ballads with a powerful voice.'],
+['Ingrid Rosario','Rep. Dominicana','adoracion',['adoración','intimidad','paz'],'Adoración íntima.','Intimate worship.'],
+['Evan Craft','EE.UU.','pop',['bilingüe','jóvenes','amor'],'Puente bilingüe entre el worship anglo y latino.','A bilingual bridge between Anglo and Latin worship.']];
+var G={todo:['Todo','All'],adoracion:['Adoración','Worship'],pop:['Pop / Baladas','Pop / Ballads'],urbano:['Urbano','Urban'],clasicos:['Clásicos','Classics']};
+var MOOD={paz:['paz','peace','calma','ansiedad','anxiety','tranquilo','descanso','rest'],consuelo:['triste','sad','dolor','duelo','grief','consuelo','comfort','lloro'],gozo:['alegre','happy','gozo','joy','fiesta','party','celebrar'],jóvenes:['jóvenes','youth','joven','teen'],esperanza:['esperanza','hope','futuro'],perdón:['perdón','forgive','culpa','guilt'],familia:['familia','family','matrimonio','marriage','esposa','esposo'],presencia:['presencia','presence','espíritu','spirit','orar','pray'],urbano:['urbano','urban','rap','reggaeton','reguetón','hip hop'],himnos:['himno','hymn','clásico','classic','tradicional']};
+var L=localStorage.ml||'es',TH=localStorage.mt||(function(){var h=+new Date().toLocaleString('en-US',{timeZone:'America/Chicago',hour:'numeric',hour12:false});return h>=7&&h<19?'day':'night'})(),F='todo',S=null,PL=JSON.parse(localStorage.mp||'[]');
+function $(i){return document.getElementById(i)}
+function tr(a){return L==='en'?a[1]:a[0]}
+function yt(n){return 'https://www.youtube.com/results?search_query='+encodeURIComponent(n+' música cristiana')}
+function sp(n){return 'https://open.spotify.com/search/'+encodeURIComponent(n)}
+function col(s){var c=['#e0b84a','#00eaff','#b4ff2e','#8367ff','#ff7ab6'],h=0;for(var i=0;i<s.length;i++)h+=s.charCodeAt(i);return c[h%5]}
+function render(){var R=A.filter(function(a){return(F==='todo'||a[2]===F)&&(!S||S(a))});
+$('list').innerHTML=R.map(function(a){var on=PL.indexOf(a[0])>-1;return '<div class="card"><div class="av" style="background:'+col(a[0])+'">'+a[0].split(' ').map(function(w){return w[0]}).join('').slice(0,2)+'</div><div class="inf"><b>'+a[0]+'</b><small>'+a[1]+' · '+tr(G[a[2]])+'</small><p>'+(L==='en'?a[5]:a[4])+'</p></div><div class="act"><a target="_blank" rel="noopener" href="'+yt(a[0])+'">▶ YouTube</a><a target="_blank" rel="noopener" href="'+sp(a[0])+'">♫ Spotify</a><button data-a="'+a[0]+'" class="'+(on?'on':'')+'">'+(on?'✓':'+')+' '+(L==='en'?'List':'Lista')+'</button></div></div>'}).join('')+'<p class="note">'+(L==='en'?'LAB · no checkout · links open public listening pages · matching is keyword-based (simulated llm.store)':'LAB · sin checkout · los enlaces abren páginas públicas para escuchar · las recomendaciones usan palabras clave (llm.store simulado)')+'</p>';
+$('n').textContent=PL.length}
+function chips(){$('chips').innerHTML=Object.keys(G).map(function(k){return '<button data-g="'+k+'" class="'+(k===F?'on':'')+'">'+tr(G[k])+'</button>'}).join('')}
+function ask(v){v=v.trim().toLowerCase();var en=L==='en';if(!v){S=null;$('ans').textContent='';render();return}
+if(v[0]==='/'){var p=v.slice(1).split(' '),c=p[0],arg=p.slice(1).join(' ');
+if(c==='es'||c==='en'){setL(c);return}if(c==='día'||c==='dia'||c==='day'||c==='noche'||c==='night'){setT(c[0]==='n'?'night':'day');return}
+if(c==='lista'||c==='list'){S=function(a){return PL.indexOf(a[0])>-1};$('ans').textContent=en?'Your list.':'Tu lista.';F='todo';chips();render();return}
+if(c==='pais'||c==='país'||c==='country'){S=function(a){return a[1].toLowerCase().indexOf(arg)>-1};$('ans').textContent=(en?'Artists from ':'Artistas de ')+arg;render();return}
+for(var k in G){if(k.indexOf(c)===0||tr(G[k]).toLowerCase().indexOf(c)===0){F=k;S=null;chips();$('ans').textContent=tr(G[k]);render();return}}
+$('ans').textContent=en?'Try /worship /urban /pop /classics /country mexico /list /en /night':'Prueba /adoracion /urbano /pop /clasicos /pais mexico /lista /en /noche';return}
+var hit=[];for(var m in MOOD){if(MOOD[m].some(function(w){return v.indexOf(w)>-1}))hit.push(m)}
+if(!hit.length){S=function(a){return(a[0]+' '+a[1]).toLowerCase().indexOf(v)>-1};$('ans').textContent=en?'Searching by name or country.':'Buscando por nombre o país.';}
+else{S=function(a){return a[3].some(function(t){return hit.indexOf(t)>-1})};$('ans').textContent=(en?'For ':'Para ')+hit.join(' · ')+(en?', try these.':', te sugiero estos.')}
+F='todo';chips();render()}
+function setL(l){L=l;localStorage.ml=l;document.documentElement.lang=l;$('lang').textContent=l==='es'?'EN':'ES';$('kick').textContent=l==='en'?'L:// STORE NETWORK · LATIN AMERICA':'L:// RED DE TIENDAS · AMÉRICA LATINA';$('sub').textContent=l==='en'?'Latin American Christian music. Type what you need to hear.':'Música cristiana latinoamericana. Escribe lo que necesitas oír.';$('q').placeholder=l==='en'?'i need peace · /urban · /country colombia':'necesito paz · /urbano · /pais colombia';$('dA').textContent=l==='en'?'🏬 STORE':'🏬 TIENDA';$('dH').textContent=l==='en'?'æ HELP':'æ AYUDA';$('dL').innerHTML=(l==='en'?'🎧 LIST ':'🎧 LISTA ')+'<span id="n">'+PL.length+'</span>';chips();render()}
+function setT(t){TH=t;localStorage.mt=t;$('dev').classList.toggle('day',t==='day');$('theme').textContent=t==='day'?'☾':'☀'}
+$('q').addEventListener('keydown',function(e){if(e.key==='Enter')ask(this.value)});
+$('chips').onclick=function(e){var g=e.target.dataset.g;if(g){F=g;S=null;$('ans').textContent='';chips();render()}};
+$('list').onclick=function(e){var a=e.target.dataset.a;if(!a)return;var i=PL.indexOf(a);i>-1?PL.splice(i,1):PL.push(a);localStorage.mp=JSON.stringify(PL);render()};
+$('lang').onclick=function(){setL(L==='es'?'en':'es')};$('theme').onclick=function(){setT(TH==='day'?'night':'day')};
+$('dA').onclick=function(){F='todo';S=null;$('q').value='';$('ans').textContent='';chips();render()};
+$('dL').onclick=function(){ask('/lista')};$('dH').onclick=function(){ask('/x')};
+setT(TH);setL(L);
+</script>
+</body>
+</html>
