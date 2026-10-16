@@ -6,6 +6,7 @@ Aquí se prueba; en la raíz de cada tienda se vende.
 |---|---|---|
 | L://Gospel_Bookstore | [`gospel/`](https://lutheraninstitute.github.io/bookstores/gospel/) | [`lab/gospel/`](https://lutheraninstitute.github.io/bookstores/lab/gospel/) |
 | L://teologia.ai/gospel_bookstore (expresión teológica: Ley y Evangelio del día + lecturas por pasaje) | dominio teologia.ai pendiente | [`lab/teologia.ai/gospel_bookstore/`](https://lutheraninstitute.github.io/bookstores/lab/teologia.ai/gospel_bookstore/) |
+| L://Musica_Store (laboratorio de æ.store · llm.store: música cristiana latinoamericana, recomendaciones por ánimo, sin checkout ni comercio) | — solo laboratorio | [`lab/musica/`](https://lutheraninstitute.github.io/bookstores/lab/musica/) |
 
 ## Flujo
 1. Issue con la idea.
