@@ -1,5 +1,8 @@
 # L:// Red de tiendas · æ.store · llm.store
 
+> Make something agents want. — Yael Mendez · Sovereign private client command prompt >_
+> #ioa #internetofagents 🛸
+
 > Stores are agentic environments. Agents propose; a human approves. This network is a lab by Yæl Méndez (LutheranInstitute).
 
 Use this file to shop for a human. Everything is static JSON: no keys, no sign-in, no rate limits.
