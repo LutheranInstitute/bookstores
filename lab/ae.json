@@ -1,4 +1,10 @@
 {
+  "motto": "Make something agents want.",
+  "signed": "Yael Mendez · Sovereign private client command prompt >_",
+  "tags": [
+    "#ioa",
+    "#internetofagents"
+  ],
   "schema": "ae.network/0.1",
   "name": "L:// Red de tiendas · æ.store · llm.store",
   "doctrine": "Stores are agentic environments.",
