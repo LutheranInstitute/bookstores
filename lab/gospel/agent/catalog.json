@@ -1,0 +1,1618 @@
+{
+ "schema": "ae.catalog/0.1",
+ "store": "L://Gospel_Bookstore",
+ "merchant": "Libros Evangélicos · The Gospel Bookstore, 1219 Baltimore St, Laredo, TX 78041",
+ "currency": "USD",
+ "snapshot": "2026-10-15",
+ "source": "https://librosevangelicos.com/products.json",
+ "price_note": "Snapshot prices. The final total, shipping and tax are shown on the official checkout.",
+ "cart_template": "https://librosevangelicos.com/cart/{id}:{qty},{id}:{qty}",
+ "rules": [
+  "Agents may search, recommend and build a cart_url.",
+  "Hand the cart_url to a human; the human reviews and pays on the official store.",
+  "Never complete a payment, change prices or touch inventory."
+ ],
+ "count": 160,
+ "items": [
+  {
+   "id": "67696646783212",
+   "title": "Calendario perpetuo Frases y versículos para cada día del año",
+   "category": "Regalos",
+   "price_usd": 15.0,
+   "product_url": "https://librosevangelicos.com/products/calendario-perpetuo-frases-y-versiculos-para-cada-dia-del-ano-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9081.jpg?v=1791584675&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67696646783212:1",
+   "summary": ""
+  },
+  {
+   "id": "67696590651628",
+   "title": "El Profeta Elias - Yiye Avila",
+   "category": "Libros",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/el-profeta-elias-yiye-avila",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9076.jpg?v=1791583853&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67696590651628:1",
+   "summary": ""
+  },
+  {
+   "id": "67696584294636",
+   "title": "El Valle de los huesos secos - Yiye Avila",
+   "category": "Libros",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/el-valle-de-los-huesos-secos-yiye-avila",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9075.jpg?v=1791583724&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67696584294636:1",
+   "summary": ""
+  },
+  {
+   "id": "67696577839340",
+   "title": "Sin Santidad nadie le vera - Yiye Avila",
+   "category": "Libros",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/sin-santidad-nadie-le-vera-yiye-avila",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9074.jpg?v=1791583592&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67696577839340:1",
+   "summary": ""
+  },
+  {
+   "id": "67696565453036",
+   "title": "Dones del Espíritu - Yiye Avila",
+   "category": "Libros",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/dones-del-espiritu-yiye-avila",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_5e32dc05-7d22-4fd7-93b2-71bfe386b67f.jpg?v=1791583433&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67696565453036:1",
+   "summary": ""
+  },
+  {
+   "id": "67579219378412",
+   "title": "Santa Biblia Reina Valera 1960 Letra Supergigante con cierre y indice",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-con-cierre-y-indice-3",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8586.webp?v=1790374486&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579219378412:1",
+   "summary": ""
+  },
+  {
+   "id": "67579216953580",
+   "title": "Santa Biblia Reina Valera 1960 letra supergigante con cierre y indice",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-con-cierre-y-indice-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8585.jpg?v=1790374335&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579216953580:1",
+   "summary": ""
+  },
+  {
+   "id": "67579211415788",
+   "title": "Santa Biblia Reina Valera 1960 letra super gigante con cierre y indice",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-super-gigante-con-cierre-y-indice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8583.webp?v=1790374018&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579211415788:1",
+   "summary": ""
+  },
+  {
+   "id": "67579194540268",
+   "title": "Santa Biblia Reina Valera 1960 letra supergigante con zipper y indice",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-con-zipper-y-indice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8581.webp?v=1790373023&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579194540268:1",
+   "summary": ""
+  },
+  {
+   "id": "67579189231852",
+   "title": "Santa Biblia Letra Super Gigante 19pt Reina Valera 1960",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-letra-super-gigante-19pt-reina-valera-1961",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8580.webp?v=1790372723&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579189231852:1",
+   "summary": ""
+  },
+  {
+   "id": "67579186675948",
+   "title": "Santa Biblia Reina Valera 1960 Letra Supergigante con zipper/ indice",
+   "category": "Biblias",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-con-zipper-indice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8579.webp?v=1790372438&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/67579186675948:1",
+   "summary": ""
+  },
+  {
+   "id": "50516649410796",
+   "title": "Separador + Bolígrafo Números 6:24-26",
+   "category": "Libros",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/separador-boligrafo-numeros-6-24-26",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_3e16df80-783d-48e9-9086-f8dccc3a2ca9.jpg?v=1790093905&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/50516649410796:1",
+   "summary": ""
+  },
+  {
+   "id": "50516645576940",
+   "title": "Separador + Bolígrafo",
+   "category": "Libros",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/separador-boligrafo",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_43fbad96-2482-4c56-a784-ba450c621acb.jpg?v=1790093703&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/50516645576940:1",
+   "summary": ""
+  },
+  {
+   "id": "50516614578412",
+   "title": "Libreta + Bolígrafo Numbers 6:24-26",
+   "category": "Libros",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/libreta-boligrafo-numbers-6-24-26",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_c4ba3a60-07ef-452c-9573-b7a0d40f4f07.jpg?v=1790092999&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/50516614578412:1",
+   "summary": ""
+  },
+  {
+   "id": "50516608090348",
+   "title": "Libreta + Bolígrafo Isaias 40:31",
+   "category": "Libros",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/libreta-boligrafo-isaias-40-31",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_a1a5a941-0b56-4095-9041-2662d54e308b.jpg?v=1790092629&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/50516608090348:1",
+   "summary": ""
+  },
+  {
+   "id": "50516527055084",
+   "title": "Santa Biblia Reina Valera 1960",
+   "category": "Biblias",
+   "price_usd": 7.5,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1968",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8458.webp?v=1790089925&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/50516527055084:1",
+   "summary": ""
+  },
+  {
+   "id": "48401866686700",
+   "title": "Taza 12oz Proverbios 3:5 incluye Llavero y Posavasos",
+   "category": "Joyas",
+   "price_usd": 12.0,
+   "product_url": "https://librosevangelicos.com/products/taza-12oz-proverbios-3-5",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8432.webp?v=1790029475&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48401866686700:1",
+   "summary": ""
+  },
+  {
+   "id": "48401854759148",
+   "title": "Taza 12oz Isaias40:31 incluye llavero y Posavasos",
+   "category": "Joyas",
+   "price_usd": 12.0,
+   "product_url": "https://librosevangelicos.com/products/taza-12oz-isaias40-31-incluye-llavero-y-posavasos",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8431.webp?v=1790029320&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48401854759148:1",
+   "summary": ""
+  },
+  {
+   "id": "48401843749100",
+   "title": "Taza 12oz Salmo 103 incluye llavero y Posavasos",
+   "category": "Joyas",
+   "price_usd": 12.0,
+   "product_url": "https://librosevangelicos.com/products/taza-12oz-salmo-103-incluye-llavero-y-posavasos",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8430.webp?v=1790029165&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48401843749100:1",
+   "summary": ""
+  },
+  {
+   "id": "48401755701484",
+   "title": "Taza 23oz Isaias 40:31",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/taza-23oz-isaias-40-31",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8427.webp?v=1790027722&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48401755701484:1",
+   "summary": ""
+  },
+  {
+   "id": "48401745707244",
+   "title": "Taza 23oz ESFUÉRZATE Y SE VALIENTE - Josue 1:9",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/taza-23oz-esfuerzate-y-se-valiente-josue-1-9",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-8426.webp?v=1790027410&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48401745707244:1",
+   "summary": ""
+  },
+  {
+   "id": "48355350446316",
+   "title": "El Perfil Biblico De Un Gobernante - Claudio Ojeda",
+   "category": "Libros",
+   "price_usd": 18.99,
+   "product_url": "https://librosevangelicos.com/products/el-perfil-biblico-de-un-gobernante-claudio-ojeda",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_229901ee-73f6-4da5-bbf9-1e032201fd74.jpg?v=1789404934&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48355350446316:1",
+   "summary": ""
+  },
+  {
+   "id": "48355345236204",
+   "title": "Nacidos Para Vivir Prosperos - Claudio Ojeda",
+   "category": "Libros",
+   "price_usd": 15.99,
+   "product_url": "https://librosevangelicos.com/products/nacidos-para-vivir-prosperos-claudio-ojeda",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_9836ba7b-45d7-439e-923a-220582464ce2.jpg?v=1789404818&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48355345236204:1",
+   "summary": ""
+  },
+  {
+   "id": "48355344318700",
+   "title": "Hogares Sanos - Claudio Ojeda",
+   "category": "Libros",
+   "price_usd": 12.99,
+   "product_url": "https://librosevangelicos.com/products/hogares-sanos-claudio-ojeda",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_32359239-86b7-4914-a0a7-946a72d813ab.jpg?v=1789404714&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48355344318700:1",
+   "summary": ""
+  },
+  {
+   "id": "48258216460524",
+   "title": "Santa Biblia Reina Valera 1960 Letra Supergigante",
+   "category": "Biblias",
+   "price_usd": 60.0,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-5",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-7629.jpg?v=1788276966&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48258216460524:1",
+   "summary": ""
+  },
+  {
+   "id": "48258206400748",
+   "title": "Santa Biblia Reina Valera 1960 Letra SuperGigante con cierre e indice",
+   "category": "Biblias",
+   "price_usd": 60.0,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-supergigante-con-cierre-e-indice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-7626.webp?v=1788276704&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48258206400748:1",
+   "summary": ""
+  },
+  {
+   "id": "48258195751148",
+   "title": "Santa Biblia Reina Valera 1960 Letra Gigante con cierre e indice",
+   "category": "Biblias",
+   "price_usd": 52.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-gigante-con-cierre-e-indice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-7624.webp?v=1788276499&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48258195751148:1",
+   "summary": ""
+  },
+  {
+   "id": "48258182119660",
+   "title": "Santa Biblia Reina Valera 1960 Letra Gigante 15 puntos con cierre",
+   "category": "Biblias",
+   "price_usd": 52.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-gigante-15-puntos-con-cierre",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-7623.webp?v=1788276267&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48258182119660:1",
+   "summary": ""
+  },
+  {
+   "id": "48149716959468",
+   "title": "Biblia del Ministro Reina Valera 1960 Letra Gigante",
+   "category": "Biblias",
+   "price_usd": 45.0,
+   "product_url": "https://librosevangelicos.com/products/biblia-del-ministro-reina-valera-1960-letra-gigante",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-6917.jpg?v=1786476422&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48149716959468:1",
+   "summary": ""
+  },
+  {
+   "id": "48149708931308",
+   "title": "Libreta + Bolígrafo Salmo 27",
+   "category": "Libros",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/libreta-boligrafo-salmo-27",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_4ac86e7d-8e42-48e8-8463-c3819cb173ff.jpg?v=1786476132&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48149708931308:1",
+   "summary": ""
+  },
+  {
+   "id": "48057278628076",
+   "title": "Pencil Books of the Bible",
+   "category": "Biblias",
+   "price_usd": 1.0,
+   "product_url": "https://librosevangelicos.com/products/pencil-books-of-the-bible",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_c658a9b8-4332-479f-bcd5-eca28739428b.jpg?v=1785597987&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48057278628076:1",
+   "summary": ""
+  },
+  {
+   "id": "48057276465388",
+   "title": "Llavero Jesus",
+   "category": "Joyas",
+   "price_usd": 2.0,
+   "product_url": "https://librosevangelicos.com/products/llavero-jesus",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_725f16b0-dc07-490f-b1a8-da1a3bef4de4.jpg?v=1785597842&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48057276465388:1",
+   "summary": ""
+  },
+  {
+   "id": "48014838857964",
+   "title": "Bible Cover size M",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-m-17",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_14452cda-eb94-4e18-8293-5ea6556bf0b6.jpg?v=1785189201&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014838857964:1",
+   "summary": ""
+  },
+  {
+   "id": "48014837285100",
+   "title": "Bible Cover Size Large",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-large-8",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_43cbe06b-eaf1-4874-bfc7-ef43a3c66a6a.jpg?v=1785189103&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014837285100:1",
+   "summary": ""
+  },
+  {
+   "id": "48014803370220",
+   "title": "Bible Cover size medium",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-medium-10",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_3d6ac5cc-267f-4a23-aa03-29a72d0d217d.jpg?v=1785188356&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014803370220:1",
+   "summary": ""
+  },
+  {
+   "id": "48014794490092",
+   "title": "Bible Cover size Medium",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-medium-9",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_06cc6384-b01c-4244-81b6-c0ec94ae7a4f.jpg?v=1785188174&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014794490092:1",
+   "summary": ""
+  },
+  {
+   "id": "48014787936492",
+   "title": "Bible Cover Size Medium",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-medium-8",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_2a40a6f6-3bb8-43d3-b43f-5a2fa8cd0c6d.jpg?v=1785188048&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014787936492:1",
+   "summary": ""
+  },
+  {
+   "id": "48014769783020",
+   "title": "Bible cover size Large",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-large-3",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_90a54f3b-24d8-4106-bd6f-2d011cfcf6b1.jpg?v=1785187620&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014769783020:1",
+   "summary": ""
+  },
+  {
+   "id": "48014714798316",
+   "title": "Bible cover size Medium",
+   "category": "Biblias",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/bible-cover-size-medium-5",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-6345.jpg?v=1785186429&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014714798316:1",
+   "summary": ""
+  },
+  {
+   "id": "48014625636588",
+   "title": "Forro Hebreos 11:1 tamaño Mediano",
+   "category": "Libros",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/forro-hebreos-11-1-tamano-mediano",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-6341.jpg?v=1785185820&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/48014625636588:1",
+   "summary": ""
+  },
+  {
+   "id": "47920538943724",
+   "title": "Biblia Para Pequeños Discípulos (Bilingüe)",
+   "category": "Biblias",
+   "price_usd": 23.0,
+   "product_url": "https://librosevangelicos.com/products/biblia-para-pequenos-discipulos-bilingue",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5642.jpg?v=1783710385&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47920538943724:1",
+   "summary": "Biblia bilingüe pensada para los más pequeños, que presenta las historias de la Palabra de Dios en español e inglés. Es un recurso ideal para acercar a los niños a las Escrituras mientras descubren la fe en ambos idiomas"
+  },
+  {
+   "id": "47899312980204",
+   "title": "Santa Biblia Reina Valera 1960 Letra Gigante",
+   "category": "Biblias",
+   "price_usd": 56.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-letra-gigante-22",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5490.jpg?v=1783354964&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47899312980204:1",
+   "summary": "Biblia Reina-Valera 1960 en edición de letra gigante, con caracteres amplios que facilitan una lectura cómoda y sin esfuerzo. Una opción excelente para el estudio, la predicación y la lectura diaria de la Palabra."
+  },
+  {
+   "id": "47892382515436",
+   "title": "Biblia Reina Valera 1960 letra gigante con referencias",
+   "category": "Biblias",
+   "price_usd": 48.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-reina-valera-1960-letra-gigante-con-referencias-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5401.jpg?v=1783117159&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47892382515436:1",
+   "summary": "Edición de la Biblia Reina-Valera 1960 con letra gigante y referencias. Combina un texto de gran tamaño, fácil de leer, con útiles referencias que enriquecen el estudio de la Palabra de Dios. Una compañera ideal para el "
+  },
+  {
+   "id": "47892375208172",
+   "title": "Biblia Compacta de Letra Grande - Versión Rey Jacobo (KJV)",
+   "category": "Biblias",
+   "price_usd": 20.0,
+   "product_url": "https://librosevangelicos.com/products/kjv-compact-large-print-bible",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5398.jpg?v=1783116767&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47892375208172:1",
+   "summary": "Biblia King James Version (Versión Rey Jacobo) que combina un formato compacto con letra grande, uniendo portabilidad y comodidad de lectura. Una opción práctica para quienes desean llevar las Escrituras consigo sin renu"
+  },
+  {
+   "id": "47892374782188",
+   "title": "Biblia Compacta - Versión Rey Jacobo (KJV)",
+   "category": "Biblias",
+   "price_usd": 15.0,
+   "product_url": "https://librosevangelicos.com/products/king-james-version-compact-bible-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5397.jpg?v=1783116640&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47892374782188:1",
+   "summary": "Biblia compacta King James Version (Versión Rey Jacobo), de tamaño reducido y cómoda de transportar. Perfecta para llevarla en el bolso o la mochila y disfrutar de la lectura de la Palabra en cualquier lugar."
+  },
+  {
+   "id": "47892353024236",
+   "title": "Biblia de Letra Gigante - Versión Rey Jacobo (KJV)",
+   "category": "Biblias",
+   "price_usd": 42.99,
+   "product_url": "https://librosevangelicos.com/products/kjv-giant-print-bible-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5394.jpg?v=1783116237&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47892353024236:1",
+   "summary": "Biblia King James Version (Versión Rey Jacobo) con letra gigante, diseñada para ofrecer la máxima comodidad de lectura. Es una opción ideal para quienes prefieren caracteres amplios y legibles durante su tiempo con la Pa"
+  },
+  {
+   "id": "47891981861100",
+   "title": "Teología de la Misión - Dr. Giacomo Cassese",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/teologia-de-la-mision-dr-giacomo-cassese",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/01EC45C4-4F56-4441-B5CC-3F6DC8B32944.jpg?v=1783100218&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47891981861100:1",
+   "summary": "En Teología de la Misión, el Dr. Giacomo Cassese explora los fundamentos bíblicos y teológicos de la misión de la iglesia en el mundo. El lector encontrará una reflexión profunda sobre el llamado a anunciar el evangelio "
+  },
+  {
+   "id": "47891981009132",
+   "title": "Breve Historia del Cristianismo - Dr. Giacomo Cassese",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/breve-historia-del-cristianismo-dr-giacomo-cassese",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/E75AFD91-96C3-4969-B679-930DFE7CFC3F.jpg?v=1783100143&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47891981009132:1",
+   "summary": "El Dr. Giacomo Cassese ofrece en esta obra un recorrido accesible por la historia del cristianismo, desde sus orígenes hasta su desarrollo a lo largo de los siglos. Con un lenguaje claro y ameno, el lector encontrará las"
+  },
+  {
+   "id": "47891973931244",
+   "title": "Nostalgia por el Edén - Dr. Giacomo Cassese",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/nostalgia-por-el-eden-dr-giacomo-cassese",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-5374.heic?v=1783099900&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47891973931244:1",
+   "summary": "En esta obra, el Dr. Giacomo Cassese invita al lector a reflexionar sobre el profundo anhelo del ser humano por recuperar la comunión perdida con Dios, aquella plenitud simbolizada en el Edén. A lo largo de sus páginas d"
+  },
+  {
+   "id": "37249511293085",
+   "title": "Vasos Surtidos",
+   "category": "Iglesia",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/cups-mix",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_7cfccf90-9a7a-4a08-821f-efb3b14c7439.png?v=1606865480&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37249511293085:1",
+   "summary": "Vasos surtidos disponibles en tienda, con variedad de estilos y colores para el uso diario o para eventos de la iglesia."
+  },
+  {
+   "id": "29149902012509",
+   "title": "Oblea de Comunión de Trigo",
+   "category": "Iglesia",
+   "price_usd": 2.99,
+   "product_url": "https://librosevangelicos.com/products/wheat-communion-waffer",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/IMG-20190823-123122.jpg?v=1566581578&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/29149902012509:1",
+   "summary": "Obleas de trigo para la comunión, elaboradas para el servicio de la Santa Cena."
+  },
+  {
+   "id": "28774185861213",
+   "title": "Certificado Mixto",
+   "category": "Iglesia",
+   "price_usd": 1.99,
+   "product_url": "https://librosevangelicos.com/products/diferentes-certificates",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/20190719-153219.jpg?v=1563568406&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/28774185861213:1",
+   "summary": "Certificados sueltos de todo tipo para las distintas celebraciones y reconocimientos de la iglesia."
+  },
+  {
+   "id": "47608237719788",
+   "title": "Biblia Reina Valera 1960 Letra Gigante Tamaño Manual",
+   "category": "Biblias",
+   "price_usd": 57.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-reina-valera-1960-letra-gigante-tamano-manual-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-3266.heic?v=1778192061&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47608237719788:1",
+   "summary": "La Biblia Reina Valera 1960 en letra gigante y tamaño manual, pensada para una lectura clara y sin fatiga visual. Su tamaño práctico la hace fácil de manejar y de llevar contigo cada día."
+  },
+  {
+   "id": "47608230674668",
+   "title": "Biblia Reina Valera 1960 Tamaño Personal",
+   "category": "Biblias",
+   "price_usd": 44.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-reina-valera-1960-tamano-personal",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-3264.heic?v=1778191481&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47608230674668:1",
+   "summary": "La Biblia Reina Valera 1960 en tamaño personal, cómoda de llevar a la iglesia, al trabajo o de viaje. Su formato compacto la hace ideal para la lectura y el estudio diario de la Palabra de Dios."
+  },
+  {
+   "id": "47581762060524",
+   "title": "101 historias favoritas de la Biblia - Ura Miller",
+   "category": "Biblias",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/101-favorite-stories-from-the-bible-ura-miller",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/view_archive_dd3e93b2-e24a-4436-bfb8-42f93e2da654.jpg?v=1783005415&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47581762060524:1",
+   "summary": "Una colección de 101 relatos bíblicos favoritos, contados de forma sencilla y amena para toda la familia. Es ideal para acercar a niños y jóvenes a las grandes historias de la Escritura y compartir momentos de lectura en"
+  },
+  {
+   "id": "47531341480172",
+   "title": "Sopa de Letras de la Biblia Letra Grande. Libro 1",
+   "category": "Biblias",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/sopa-de-letras-de-la-biblia-letra-grande-libro-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_2cbd03b2-3d89-4f34-b0e2-25cb9c240a17.jpg?v=1776205939&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47531341480172:1",
+   "summary": "Sopa de Letras De la Biblia Letra Grande. Libro 1 — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "47531334336748",
+   "title": "Sopa de Letras de la Biblia Letra Grande. Libro 2",
+   "category": "Biblias",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/sopa-de-letras-de-la-biblia-letra-grande-libro-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_86126276-2b7e-41cf-9aa2-9df00539fbd7.jpg?v=1776205735&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47531334336748:1",
+   "summary": "Sopa de Letras De la Biblia Letra Grande. Libro 2 — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "47531324997868",
+   "title": "Sopa de Letras de la Biblia Letra Grande. Libro 3",
+   "category": "Biblias",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/sopa-de-letras-de-la-biblia-letra-grande-libro-3",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_bbd17dd7-2ef4-4a7b-a89e-21a28be7dc0d.jpg?v=1776205496&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47531324997868:1",
+   "summary": "Sopa de Letras De la Biblia Letra Grande. Libro 3 — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "47529262973164",
+   "title": "Biblia de Estudio Arcoíris Letra Grande",
+   "category": "Biblias",
+   "price_usd": 84.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-de-estudio-arcoiris-letra-gigante",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-2600.heic?v=1776186245&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47529262973164:1",
+   "summary": "Biblia de Estudio Arcoíris letra gigante — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "47529174860012",
+   "title": "Biblia Letra Super Gigante Nueva Versión Internacional",
+   "category": "Biblias",
+   "price_usd": 47.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-letra-super-gigante-nvi",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/9781462799336_5a2b7.jpg?v=1782937170&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47529174860012:1",
+   "summary": "Biblia Letra Super Gigante NUEVA VERSIÓN INTERNACIONAL — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "47216717365484",
+   "title": "Mi Ofrenda",
+   "category": "Regalos",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/my-offering",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9640.jpg?v=1783115807&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/47216717365484:1",
+   "summary": "Mi ofrenda — Un artículo cristiano disponible en la librería The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "46752549208300",
+   "title": "Bolsita Jesús",
+   "category": "Regalos",
+   "price_usd": 2.25,
+   "product_url": "https://librosevangelicos.com/products/bolsita-jesus",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_4ea8b389-3dfa-40fb-be2f-604a3eba14a0.jpg?v=1755970501&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46752549208300:1",
+   "summary": "Bolsita Jesús — Un artículo cristiano disponible en The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "46746351599852",
+   "title": "Pluma",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/pluma-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-0457.jpg?v=1755811467&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46746351599852:1",
+   "summary": "Pluma cristiana disponible en La Librería del Evangelio, un detalle sencillo y práctico. Ideal como regalo o para uso personal, perfecta para acompañar tus notas y reflexiones diarias. Un pequeño obsequio lleno de signif"
+  },
+  {
+   "id": "46357432107244",
+   "title": "Separador|Bolígrafo",
+   "category": "Regalos",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/separador-pluma",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/6D719C75-9C07-4F37-BA57-891B05AD28BF.jpg?v=1744385496&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46357432107244:1",
+   "summary": "Set de marcapáginas y bolígrafo, un regalo práctico y económico para acompañar la lectura bíblica."
+  },
+  {
+   "id": "46208230424812",
+   "title": "Listones para Panderos",
+   "category": "Niños",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/listo-es-para-panderos",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/65682FB6-B287-456B-AA3D-BDD686872296.jpg?v=1740244561&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46208230424812:1",
+   "summary": "Estos listones para panderos añaden movimiento y color a la adoración y la danza. Son ideales para embellecer tus panderos durante los momentos de alabanza en la iglesia. Un accesorio hermoso para expresar tu adoración a"
+  },
+  {
+   "id": "46165974712556",
+   "title": "Chili Rokas",
+   "category": "Regalos",
+   "price_usd": 0.5,
+   "product_url": "https://librosevangelicos.com/products/chili-rokas",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-1865.heic?v=1739051291&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46165974712556:1",
+   "summary": "Chili Rokas — Un sabroso aperitivo con un toque de chile, ideal para disfrutar en cualquier momento. Perfecto para acompañar tu visita a la tienda o para llevar."
+  },
+  {
+   "id": "46142659625196",
+   "title": "Shalom - Javier Molina",
+   "category": "Regalos",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/javier-molina-shalom",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/FullSizeRender_f464890e-d2db-400f-8982-e22858d631ce.heic?v=1738275127&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/46142659625196:1",
+   "summary": "Shalom , de Javier Molina, es un artículo cristiano disponible en La Librería del Evangelio, ideal como regalo o para tu colección personal."
+  },
+  {
+   "id": "45129557410028",
+   "title": "Pestañas Bíblicas (Índice)",
+   "category": "Biblias",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/bible-tabsindice",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/E09C347B-E882-43BF-9896-D019A0188A73.jpg?v=1715876283&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/45129557410028:1",
+   "summary": "Pestañas adhesivas con índice para tu Biblia, que te permiten localizar rápidamente cada libro y pasaje. Un accesorio práctico para el estudio y la lectura diaria."
+  },
+  {
+   "id": "44763292598508",
+   "title": "Cartera Día del Padre",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/cartera-dia-del-padre",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/37BCA11B-CD42-4407-A1F2-B4E080CA1144.jpg?v=1712258598&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44763292598508:1",
+   "summary": "Cartera conmemorativa del Día del Padre, un regalo práctico y lleno de significado para honrar a papá en su día especial."
+  },
+  {
+   "id": "44471482482924",
+   "title": "Parábolas de Jesús para Niños",
+   "category": "Niños",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/parabolas-de-jesus-para-ninos",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/721D1DB2-8045-4923-B155-04FEA13449AF.jpg?v=1708972166&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44471482482924:1",
+   "summary": "Parábolas de Jesús para Niños es un libro infantil cristiano que presenta las parábolas que Jesús enseñó de una manera sencilla y entretenida, ideal para introducir a los niños en las historias y valores de la fe."
+  },
+  {
+   "id": "44385642414316",
+   "title": "Pin de Servidora",
+   "category": "Joyas",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/pin-servidora",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/D87B6F1D-C9C8-4EBC-93E5-66F9E009F0DF.jpg?v=1707409864&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44385642414316:1",
+   "summary": "Pin SERVIDORA — Un pin de solapa cristiano, un pequeño accesorio para mostrar tu fe."
+  },
+  {
+   "id": "44385629012204",
+   "title": "Pin PASTOR/A",
+   "category": "Joyas",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/pin-pastora",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/E32F25B4-369B-473A-BD11-7F5D996A6671.jpg?v=1707409454&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44385629012204:1",
+   "summary": "Pin PASTOR/A — Un pin de solapa cristiano, un pequeño accesorio para mostrar tu fe."
+  },
+  {
+   "id": "44385622294764",
+   "title": "Pin de Maestra",
+   "category": "Joyas",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/pin-maestra",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/1B8CE413-CD95-438C-BD5D-CC43C450F39D.jpg?v=1707409253&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44385622294764:1",
+   "summary": "Pin MAESTRA — Un pin cristiano de solapa, un pequeño accesorio para mostrar tu fe."
+  },
+  {
+   "id": "44385614627052",
+   "title": "Pin de Maestro",
+   "category": "Joyas",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/pin-maestro",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/71BE373B-FD15-4ED9-B784-DB1316389EC5.jpg?v=1707409110&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/44385614627052:1",
+   "summary": "Pin MAESTRO — Un pin de solapa cristiano, un pequeño accesorio para mostrar tu fe."
+  },
+  {
+   "id": "43896279040236",
+   "title": "Pasajes Difíciles de la Biblia",
+   "category": "Biblias",
+   "price_usd": 40.99,
+   "product_url": "https://librosevangelicos.com/products/pasajes-dificiles-de-la-biblia",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/F698AAAD-6B72-40C5-B208-103A32C0DF38.jpg?v=1705699517&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43896279040236:1",
+   "summary": "Pasajes Difíciles de la Biblia es una obra que aborda con claridad los textos bíblicos que más preguntas suscitan. Ofrece explicaciones fundamentadas que ayudan al lector a comprender su contexto y significado, despejand"
+  },
+  {
+   "id": "43862432645356",
+   "title": "El Despertar de la Gracia - Charles R. Swindoll",
+   "category": "Libros",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/el-despertar-de-la-gracia-charles-r-swindoll",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/image_b9cc0a0e-6947-4463-a3fe-11d0277f7758.jpg?v=1687472986&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43862432645356:1",
+   "summary": "El Despertar de la Gracia , de Charles R. Swindoll, invita al lector a redescubrir la libertad y el gozo que nacen de la gracia de Dios. Con su estilo cálido y pastoral, anima a dejar atrás el legalismo y a vivir plename"
+  },
+  {
+   "id": "43852742328556",
+   "title": "Coca-Cola (Botella)",
+   "category": "Otros",
+   "price_usd": 1.75,
+   "product_url": "https://librosevangelicos.com/products/coca-botella",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/image_e4b99a65-0d58-4692-bbcb-8f146d287752.jpg?v=1686775486&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43852742328556:1",
+   "summary": "Botella de Coca-Cola bien fría, disponible en la tienda para disfrutar durante tu visita."
+  },
+  {
+   "id": "43818685694188",
+   "title": "Santa Biblia Edición Clásica Letra Gigante Nueva Traducción Viviente",
+   "category": "Biblias",
+   "price_usd": 61.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-edicion-clasica-letra-gigante-nueva-traduccion-viviente-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/9781496438300_31396.jpg?v=1782960466&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43818685694188:1",
+   "summary": "La Santa Biblia Nueva Traducción Viviente (NTV) en edición clásica de letra gigante, pensada para una lectura clara y cómoda gracias a su tipografía de gran tamaño. Ideal para el estudio y la lectura devocional diaria de"
+  },
+  {
+   "id": "43818661380332",
+   "title": "Doctrina Bíblica - Wayne Grudem",
+   "category": "Regalos",
+   "price_usd": 19.99,
+   "product_url": "https://librosevangelicos.com/products/doctrina-biblica-wayne-grudem",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/image_e296bed2-89cf-4431-af55-37dbd7a508b9.jpg?v=1683927546&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43818661380332:1",
+   "summary": "Doctrina Bíblica , de Wayne Grudem, presenta de forma clara y accesible las enseñanzas fundamentales de la fe cristiana. Una obra esencial para todo creyente que desea comprender mejor lo que la Biblia enseña y fundament"
+  },
+  {
+   "id": "43774249828588",
+   "title": "Pluma Sublime Gracia para el Corazón de la Mujer",
+   "category": "Libros",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/sublime-gracia-para-el-corazon-de-la-mujer-pluma",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_36067a92-d3b3-4d80-8066-edfb486ce957.jpg?v=1681225796&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43774249828588:1",
+   "summary": "Sublime Gracia para el Corazón de la Mujer es una pluma con un mensaje cristiano inspirador, pensada especialmente para la mujer de fe. Un detalle práctico y bonito para el uso diario, para tomar notas durante el estudio"
+  },
+  {
+   "id": "43663031304428",
+   "title": "Himnario Cantad al Señor",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/himnario-cantad-al-senor",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_cfb6df73-004d-46e2-a7ff-0eb090ff273d.jpg?v=1676319861&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43663031304428:1",
+   "summary": "Himnario Cantad al Señor — Una colección de himnos y cánticos para la alabanza y la adoración, ideal para el culto congregacional, la iglesia y la devoción personal."
+  },
+  {
+   "id": "43616827637996",
+   "title": "Collar de Comunión",
+   "category": "Joyas",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/communion-necklace",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_4a4dc85d-93fa-435b-8e0b-9af40d3376c0.jpg?v=1673886985&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43616827637996:1",
+   "summary": "Collar de Comunión — Un collar cristiano, ideal como regalo para conmemorar la Primera Comunión u otra ocasión especial de fe."
+  },
+  {
+   "id": "43598523334892",
+   "title": "Dios y la Existencia: El Pensamiento de Rudolf K. Bultmann - Xabier Pikaza",
+   "category": "Libros",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/dios-y-la-existencia-el-pensamiento-de-rudolf-k-bultmann-xabier-pikaza",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_1e394882-885a-48e9-be16-c9caaee80389.jpg?v=1673029695&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43598523334892:1",
+   "summary": "Dios y la existencia el pensamiento de Rudolf K. Bultmann Xabier Pikaza es un libro cristiano disponible en La Librería del Evangelio, ideal para el estudio y crecimiento espiritual."
+  },
+  {
+   "id": "43583748604140",
+   "title": "Biblia infantil (English Standard Version)",
+   "category": "Niños",
+   "price_usd": 29.99,
+   "product_url": "https://librosevangelicos.com/products/kids-bible-english-standard-version-3",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_98db0960-dc1f-46f3-9150-7bb008c573cf.jpg?v=1672245937&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43583748604140:1",
+   "summary": "Biblia para Niños English Standard Version — Una edición de la Biblia en la versión ESV, pensada especialmente para los niños. Con un texto claro y accesible, acerca a los más pequeños a las historias y enseñanzas de la "
+  },
+  {
+   "id": "43568559292652",
+   "title": "Biblia Mis Quince Años Reina Valera 1960",
+   "category": "Biblias",
+   "price_usd": 31.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-mis-quince-anos-reina-valera-1960",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_170de1b0-0b28-4d56-9b39-f985a4d6149a.heic?v=1671470189&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43568559292652:1",
+   "summary": "Biblia Mis Quince Años en la clásica traducción Reina Valera 1960, una edición especial para conmemorar los quince años. Un regalo significativo para celebrar esta fecha tan especial con la Palabra de Dios. Ideal para la"
+  },
+  {
+   "id": "43498573988076",
+   "title": "Boletín Funerario",
+   "category": "Regalos",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/funeral-bulletin-5",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_cd5de777-d923-42c2-bfe6-21c908f54da5.jpg?v=1668616831&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43498573988076:1",
+   "summary": "Boletín de funeral — Un artículo cristiano disponible en The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "43498563567852",
+   "title": "Boletín de Acción de Gracias",
+   "category": "Regalos",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/give-thanks-bulletin",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/BA96616B-8C2B-48C9-A9FD-39ED36B6FB98.jpg?v=1707154965&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43498563567852:1",
+   "summary": "Boletín de acción de gracias — Un artículo cristiano disponible en The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "43498508157164",
+   "title": "Es Hora de Buscar al Señor",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/it-is-time-to-seek-the-lord",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_e01028ec-4613-48c9-bc46-618827cdda65.jpg?v=1668616219&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43498508157164:1",
+   "summary": "Es Hora de Buscar al Señor es un mensaje que anima al lector a volver su corazón a Dios y a buscarle con sinceridad en cada etapa de la vida. Una lectura que inspira a la oración, al arrepentimiento y a la búsqueda de la"
+  },
+  {
+   "id": "43498427515116",
+   "title": "Vuelve al Señor tu Dios Paquete de 100 Boletines",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/return-to-the-lord-your-god",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-9504.jpg?v=1707151424&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43498427515116:1",
+   "summary": "Vuelve al Señor tu Dios — Paquete de 100 boletines para el culto, ideales para acompañar los servicios de la iglesia con un mensaje de fe y esperanza."
+  },
+  {
+   "id": "43486109597932",
+   "title": "Certificado de Bautismo",
+   "category": "Iglesia",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/certificado-bautismo",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f95d5495-6cf3-420e-bf99-18c08b1f54d4.jpg?v=1668100583&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43486109597932:1",
+   "summary": "Certificado de bautismo — Un certificado conmemorativo cristiano para registrar y celebrar este hito especial de fe."
+  },
+  {
+   "id": "43265915977964",
+   "title": "¿Sabotaje?",
+   "category": "Regalos",
+   "price_usd": 5.5,
+   "product_url": "https://librosevangelicos.com/products/sabotage",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/237B3F86-F5A0-40ED-BBEB-65649A566011.jpg?v=1720884944&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43265915977964:1",
+   "summary": "¿Sabotaje? — Un artículo cristiano disponible en The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "43265835729132",
+   "title": "Accu Gel Marcadores Rosas",
+   "category": "Regalos",
+   "price_usd": 1.99,
+   "product_url": "https://librosevangelicos.com/products/accu-gel-highlighters-pink",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_1393d1dd-a818-4ed0-a914-051c6650e3ed.jpg?v=1663088061&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/43265835729132:1",
+   "summary": "Resaltadores de gel Accu Gel en color rosa, ideales para señalar versículos y pasajes especiales en la Biblia sin traspasar el papel. Perfectos para el estudio y la lectura devocional."
+  },
+  {
+   "id": "42955399659756",
+   "title": "Pegatina",
+   "category": "Regalos",
+   "price_usd": 5.0,
+   "product_url": "https://librosevangelicos.com/products/sticker-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_3ce0c5dd-8158-4c4f-bfa1-bb45d3745ba0.jpg?v=1656690420&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42955399659756:1",
+   "summary": "Calcomanía con diseño de temática cristiana, perfecta para decorar y personalizar cuadernos, botellas, computadoras portátiles y más. Una forma sencilla de compartir tu fe cada día."
+  },
+  {
+   "id": "42947800236268",
+   "title": "Cartel de asistencia",
+   "category": "Regalos",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/cartel-asistencia-2",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_2e4713ef-ec77-4993-b76d-aed8bd355376.jpg?v=1656519944&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42947800236268:1",
+   "summary": "Cartel de asistencia — Cartel para llevar el control de asistencia, práctico para la escuela dominical y otras actividades de la iglesia."
+  },
+  {
+   "id": "42947799646444",
+   "title": "Cartel de Asistencia",
+   "category": "Regalos",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/cartel-asistencia-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_b3a5eef7-e25a-4c81-82e1-0bc45a1a2757.jpg?v=1656519907&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42947799646444:1",
+   "summary": "Cartel de asistencia — Cartel para llevar el control de asistencia, práctico para la escuela dominical y otras actividades de la iglesia."
+  },
+  {
+   "id": "42947798597868",
+   "title": "Cartel Asistencia",
+   "category": "Regalos",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/cartel-asistencia",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_b9510552-fce7-4645-8ac6-4fcd34b79287.jpg?v=1656519870&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42947798597868:1",
+   "summary": "El cartel de asistencia es un recurso práctico para registrar la asistencia en la escuela dominical o en las actividades de la iglesia. Ayuda a llevar un seguimiento ordenado y a motivar la participación constante de los"
+  },
+  {
+   "id": "42628021715180",
+   "title": "Pluma Proverbios 16:3",
+   "category": "Regalos",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/pluma-proverbios-16-3",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f90ba5b3-cec1-40d0-b1c1-e13f23c87863.jpg?v=1649257909&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42628021715180:1",
+   "summary": "Este bolígrafo con la referencia de Proverbios 16:3 une la elegancia de escribir con un mensaje de fe. Un detalle sencillo y con significado, ideal como regalo para hermanos en la fe o para acompañar tus momentos de estu"
+  },
+  {
+   "id": "42577852432620",
+   "title": "Emblema de Coche",
+   "category": "Regalos",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/car-emblem-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_d8782b00-d8db-4385-b07d-326afa198e6e.jpg?v=1648246077&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42577852432620:1",
+   "summary": "Emblema para coche — Emblema cristiano para decorar tu automóvil y compartir tu fe dondequiera que vayas. Un detalle sencillo, ideal también para regalar."
+  },
+  {
+   "id": "42425398886636",
+   "title": "Santa Biblia Reina Valera 1960 Color Rosa y Morado",
+   "category": "Biblias",
+   "price_usd": 49.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-1960-color-rosa-y-morado",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/08C43DA6-7071-4CE6-83FD-CB04E2B6AF78.jpg?v=1716054411&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42425398886636:1",
+   "summary": "Santa Biblia Reina-Valera 1960 en atractiva combinación de colores rosa y morado. Una edición ideal para el uso personal y devocional, perfecta como regalo. Presentada en la clásica versión Reina-Valera 1960."
+  },
+  {
+   "id": "42333275521260",
+   "title": "Oasis en el Desierto",
+   "category": "Libros",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/oasis-en-el-desierto",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_1444bd50-7d5a-42f2-8f3d-094dbebb9ef1.jpg?v=1642697174&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42333275521260:1",
+   "summary": "Oasis en el Desierto ofrece palabras de aliento y consuelo para los momentos difíciles de la vida. Como un refugio en medio de la aridez, esta obra invita al lector a encontrar en Dios descanso, esperanza y renovación. I"
+  },
+  {
+   "id": "42321215488236",
+   "title": "El Termostato de Esperanza",
+   "category": "Libros",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/el-termostato-de-esperanza",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_2f4f3687-a9d0-4bac-817d-e938dc3990d4.jpg?v=1642534639&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42321215488236:1",
+   "summary": "El Termostato de Esperanza es una obra cristiana que anima al lector a mantener viva la esperanza en medio de las dificultades. A través de sus páginas, invita a ajustar la actitud del corazón hacia la fe y la confianza "
+  },
+  {
+   "id": "42206464278764",
+   "title": "Himnos de Gloria, Cantos de Triunfo",
+   "category": "Libros",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/himnos-de-gloria-cantos-de-triunfo",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_13de77d3-f0ca-447b-b9ee-00c92576d527.jpg?v=1640041038&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42206464278764:1",
+   "summary": "Himnos de Gloria, Cantos de Triunfo es un himnario clásico muy apreciado en las congregaciones de habla hispana. Reúne himnos tradicionales y cantos de alabanza para la adoración congregacional y personal. Ideal para igl"
+  },
+  {
+   "id": "42197679374572",
+   "title": "Forro de bolso grande",
+   "category": "Regalos",
+   "price_usd": 37.99,
+   "product_url": "https://librosevangelicos.com/products/forro-bolso-large",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_91a209f0-ce83-4ecc-87fb-a18986e78125.jpg?v=1639860790&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42197679374572:1",
+   "summary": "Forro de bolso grande — Forro tipo bolso de tamaño grande, ideal para proteger y transportar su Biblia. Un accesorio práctico para el uso diario y un buen detalle para regalar."
+  },
+  {
+   "id": "42157369327852",
+   "title": "Nuevo Testamento NVI",
+   "category": "Regalos",
+   "price_usd": 3.99,
+   "product_url": "https://librosevangelicos.com/products/nuevo-testamento-nvi",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_9b3c8374-a8f8-4078-bc39-3b28914da8f6.jpg?v=1639071874&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42157369327852:1",
+   "summary": "Nuevo Testamento en la Nueva Versión Internacional (NVI), en formato práctico para llevar y compartir. Ideal para el evangelismo, los nuevos creyentes y la lectura diaria."
+  },
+  {
+   "id": "42143566397676",
+   "title": "Monedero",
+   "category": "Regalos",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/coin-purse-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_4b7cb398-dc37-47ab-a352-91d1ea781c91.jpg?v=1638824000&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/42143566397676:1",
+   "summary": "Monedero con diseño cristiano, práctico para llevar monedas y pequeños objetos. Un detalle bonito y útil para regalar."
+  },
+  {
+   "id": "41350409126045",
+   "title": "Estuche Escolar para Niños",
+   "category": "Niños",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/estuche-escolar-para-ninos-9",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_a3e52a1a-ce16-46b9-8d21-b4886a2c81fa.jpg?v=1635887049&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/41350409126045:1",
+   "summary": "Estuche escolar para niños, práctico para guardar lápices, colores y útiles. Un detalle ideal para el regreso a clases, la escuela dominical o para regalar."
+  },
+  {
+   "id": "41154093154461",
+   "title": "Alborada de Tiempos Fecundos - Carmelo Álvarez",
+   "category": "Libros",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/alborada-de-tiempos-fecundos-carmelo-alvarez",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_4a908de8-654b-4977-a113-02cd79fad7b3.jpg?v=1633552003&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/41154093154461:1",
+   "summary": "Alborada de tiempos fecundos, de Carmelo Álvarez, es una obra que invita a la reflexión sobre la vida de fe y el caminar de la iglesia. Una lectura enriquecedora para quienes desean profundizar en su crecimiento espiritu"
+  },
+  {
+   "id": "40749321552029",
+   "title": "Santa Biblia Reina Valera Letra Grande Palabras de Jesús en Rojo",
+   "category": "Biblias",
+   "price_usd": 28.99,
+   "product_url": "https://librosevangelicos.com/products/santa-biblia-reina-valera-letra-grande-palabras-de-jesus-en-rojo-1",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f3104b70-4be8-439e-8b13-88dc755dd824.jpg?v=1629386600&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40749321552029:1",
+   "summary": "Santa Biblia Reina Valera con letra grande y las palabras de Jesús impresas en rojo para distinguirlas fácilmente durante la lectura. Su tipografía amplia hace más cómoda la lectura diaria y el estudio de las Escrituras."
+  },
+  {
+   "id": "40711026245789",
+   "title": "Cómo Tratar con Personas Difíciles - Jiff Briscoe",
+   "category": "Libros",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/como-tratar-con-personas-dificiles-jiff-briscoe",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_acbec584-5c89-489a-a20c-8be71fefe4e2.jpg?v=1628964800&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40711026245789:1",
+   "summary": "Cómo Tratar con Personas Difíciles , de Jiff Briscoe, ofrece consejos bíblicos y prácticos para responder con gracia y sabiduría en las relaciones más complicadas. Una lectura útil para el hogar, el trabajo y la vida en "
+  },
+  {
+   "id": "40423295713437",
+   "title": "Dios Es tu Defensor - Rosie Rivera",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/dios-es-tu-defensor-rosie-rivera",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_74208649-f5b0-4ee7-85bc-3139d89ce433.jpg?v=1626129363&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40423295713437:1",
+   "summary": "Dios es tu defensor , de Rosie Rivera, invita al lector a soltar la carga de defenderse a sí mismo y a confiar en que Dios pelea por los suyos. Con fundamento bíblico y un tono cercano, ofrece esperanza y sanidad a quien"
+  },
+  {
+   "id": "40423288307869",
+   "title": "Doble Bendición - Mark Batterson",
+   "category": "Regalos",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/doble-bendicion-mark-batterson",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_5b21341a-6782-493f-9eed-a92bc1c2474e.jpg?v=1626129260&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40423288307869:1",
+   "summary": "Doble Bendición , de Mark Batterson, explora lo que significa recibir la bendición de Dios y, a la vez, convertirse en bendición para otros. Un mensaje inspirador sobre la gratitud y la generosidad, ideal para el crecimi"
+  },
+  {
+   "id": "40332556533917",
+   "title": "Bolígrafo",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/pens",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-0456.jpg?v=1755811517&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40332556533917:1",
+   "summary": "Bolígrafo — Un bolígrafo con un mensaje cristiano, práctico para el uso diario o para tomar notas durante el estudio bíblico."
+  },
+  {
+   "id": "40138877501597",
+   "title": "El Discipulado Eficaz la Dinámica Metamorfosis Espiritual Dr Giacomo Cassese y A.B. (Abdul) Alvarez",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/el-discipulado-eficaz-la-dinamica-de-la-metamorfosis-espiritual",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_5e600332-5c0c-4fb5-b132-5895f9030a57.jpg?v=1623100155&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40138877501597:1",
+   "summary": "El Discipulado Eficaz: la dinámica de la metamorfosis espiritual , del Dr. Giacomo Cassese y A.B. (Abdul) Alvarez, presenta principios bíblicos para formar discípulos y acompañar la transformación espiritual del creyente"
+  },
+  {
+   "id": "40055294558365",
+   "title": "William Barclay 1 y 2 Timoteo Tito Filemón Volumen 12 Comentario al Nuevo Testamento",
+   "category": "Libros",
+   "price_usd": 16.99,
+   "product_url": "https://librosevangelicos.com/products/william-barclay-1-y-2-timoteo-tito-filemon-volumen-12-comentario-al-nuevo-testamento",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_5f32d662-f80e-4719-8e77-c83ae509af4f.jpg?v=1622215449&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/40055294558365:1",
+   "summary": "Comentario al Nuevo Testamento de William Barclay, volumen 12: 1 y 2 Timoteo, Tito y Filemón. Un recorrido pasaje a pasaje por las epístolas pastorales, con explicaciones claras que iluminan su contexto y su mensaje para"
+  },
+  {
+   "id": "39932329328797",
+   "title": "Dietrich Bonhoeffer: el pastor que siguió a Cristo hasta la cruz",
+   "category": "Regalos",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/dietrich-bonhoeffer-el-pastor-que-siguio-a-cristo-hasta-la-cruz",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_46019d84-d389-47a8-85a2-d5f63aa3609c.jpg?v=1621032106&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39932329328797:1",
+   "summary": "Dietrich Bonhoeffer: el pastor que siguió a Cristo hasta la cruz — Una biografía del pastor y teólogo alemán que se opuso al régimen nazi y permaneció fiel a Cristo hasta entregar su propia vida. Un testimonio inspirador"
+  },
+  {
+   "id": "39932267659421",
+   "title": "Tratados",
+   "category": "Otros",
+   "price_usd": 4.99,
+   "product_url": "https://librosevangelicos.com/products/tratados-16",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_d3b95a04-0d91-449e-a03e-33e4fae06f76.jpg?v=1621031178&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39932267659421:1",
+   "summary": "Tratados — Un tratado evangelístico, ideal para compartir el mensaje del evangelio de una manera sencilla y práctica."
+  },
+  {
+   "id": "39932210938013",
+   "title": "Biblia de Jerusalén Latinoamericana: La Gran Aventura, tu Viaje por la Biblia",
+   "category": "Biblias",
+   "price_usd": 84.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-de-jerusalen-latinoamericana-the-great-adventure-tu-viaje-por-la-biblia",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_721560b6-5a90-4f84-9bde-a7418b003168.jpg?v=1621030105&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39932210938013:1",
+   "summary": "Biblia de Jerusalén Latinoamericana La gran aventura, tu viaje por la Biblia — Artículo relacionado con la Santa Biblia disponible en nuestra tienda, ideal para el estudio diario y el crecimiento espiritual."
+  },
+  {
+   "id": "39681182662813",
+   "title": "Biblia Devocional Los Lenguajes del Amor NLT - Gary Chapman",
+   "category": "Biblias",
+   "price_usd": 42.99,
+   "product_url": "https://librosevangelicos.com/products/love-languages-devotional-bible-gary-chapman-nlt",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/image_a5e58676-abed-4cd3-9d70-f9536ca1d336.heic?v=1686672385&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39681182662813:1",
+   "summary": "Biblia Devocional Los Lenguajes del Amor NLT - Gary Chapman : una Biblia en la traducción NLT que incorpora devocionales inspirados en los reconocidos cinco lenguajes del amor del Dr. Gary Chapman. Ideal para parejas y m"
+  },
+  {
+   "id": "39500549652637",
+   "title": "El Espíritu Santo - Billy Graham",
+   "category": "Libros",
+   "price_usd": 18.99,
+   "product_url": "https://librosevangelicos.com/products/el-espiritu-santo-billy-graham",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f51c0935-fb35-427e-b280-17baeef93b7c.png?v=1616777201&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39500549652637:1",
+   "summary": "El Espíritu Santo , de Billy Graham, es una obra clásica sobre la persona y la obra del Espíritu de Dios en la vida del creyente. El reconocido evangelista explica con claridad bíblica quién es el Espíritu Santo, cómo ob"
+  },
+  {
+   "id": "39386292322461",
+   "title": "La Cena: Todos Iremos, Pues Somos Iguales para Dios (Edición Bilingüe) - Dra. Nohemi C. Pagán",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/la-cena-todos-iremos-pues-somos-iguales-para-dios-bilingue-dr-nohemi-c-pagan",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_8267e648-29b0-4157-861a-c51151c4ab3b.png?v=1615505562&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39386292322461:1",
+   "summary": "La Cena: Todos Iremos, Pues Somos Iguales para Dios , de la Dra. Nohemi C. Pagán, es una obra en edición bilingüe (español e inglés) que reflexiona sobre la invitación de Dios a Su mesa, ante quien todos somos iguales. U"
+  },
+  {
+   "id": "39386257391773",
+   "title": "Más que una Clase - Nereida Nales-Perez",
+   "category": "Libros",
+   "price_usd": 6.99,
+   "product_url": "https://librosevangelicos.com/products/mas-que-una-clase-nereida-nales-perez",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_ba6fb4ed-fd3e-4312-a26d-cfa9b6b38a7c.png?v=1615505201&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/39386257391773:1",
+   "summary": "Más que una Clase , de Nereida Nales-Perez, es una reflexión sobre el ministerio de la enseñanza cristiana y el impacto que un maestro puede tener en la vida de sus alumnos. Una lectura que anima a maestros y líderes a v"
+  },
+  {
+   "id": "37766782845085",
+   "title": "Desinfectante de manos Rosa de Sarón",
+   "category": "Otros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/hand-sanitizer-rose-of-sharon",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_ab7f912e-2c72-40ad-92f3-997bb1d8f887.png?v=1612371437&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37766782845085:1",
+   "summary": "Desinfectante de Manos Rosa de Sarón — Gel desinfectante para manos con aroma a Rosa de Sarón, inspirado en las fragancias de la tradición bíblica. Práctico para llevar contigo o para regalar."
+  },
+  {
+   "id": "37766781730973",
+   "title": "Desinfectante de manos Mirra",
+   "category": "Otros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/hand-sanitizer-myrrh",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_fa67a7d7-ef39-4d4e-8e6c-121555e13a15.png?v=1612371402&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37766781730973:1",
+   "summary": "Desinfectante de Manos Mirra — Gel desinfectante para manos con aroma a mirra, inspirado en las fragancias de la tradición bíblica. Práctico para llevar contigo o para regalar."
+  },
+  {
+   "id": "37766780682397",
+   "title": "Desinfectante de manos Granada",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/hand-sanitizer-pomegranate",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_275fd129-2f46-44c0-bd6a-793b859ba62c.png?v=1612371370&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37766780682397:1",
+   "summary": "Desinfectante de Manos Granada — Gel desinfectante para manos con aroma a granada. Un detalle práctico para llevar en el bolso, el auto o para regalar."
+  },
+  {
+   "id": "37609487368349",
+   "title": "Lo Mejor Está por Llegar - Greg Laurie",
+   "category": "Libros",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/lo-mejor-esta-por-llegar-greg-laurie",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_d94d8d7e-1317-4beb-b5c3-26bd3815eea4.png?v=1610748978&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609487368349:1",
+   "summary": "Lo Mejor Está por Llegar , de Greg Laurie, anima al lector a mirar el futuro con esperanza, confiando en las promesas de Dios. El reconocido evangelista muestra que, aun en medio de las dificultades, el Señor tiene prepa"
+  },
+  {
+   "id": "37609327100061",
+   "title": "Decídase a Cambiar - Sharon A. Steele",
+   "category": "Libros",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/decidase-a-cambiar-sharon-a-steele",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_43e58a16-645a-4052-b642-56813411d5e4.png?v=1610746615&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609327100061:1",
+   "summary": "Decídase a Cambiar , de Sharon A. Steele, invita al lector a dar pasos concretos hacia el cambio personal con la ayuda de Dios. Una lectura motivadora para quienes desean dejar atrás viejos hábitos y crecer en su vida es"
+  },
+  {
+   "id": "37609305374877",
+   "title": "Esperanza para los Musulmanes - Don McCurry",
+   "category": "Libros",
+   "price_usd": 15.99,
+   "product_url": "https://librosevangelicos.com/products/esperanza-para-los-musulmanes-don-mccurry",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_7a1b316b-839d-48f0-bdd3-8e86c1e4616f.png?v=1610746300&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609305374877:1",
+   "summary": "Esperanza para los Musulmanes , de Don McCurry, ayuda al lector a comprender el mundo musulmán y a compartir el amor de Cristo con sensibilidad y respeto. Una obra útil para misioneros, líderes y creyentes que desean ten"
+  },
+  {
+   "id": "37609253208221",
+   "title": "El Sembrador Salió a Sembrar - Rafael Toirac",
+   "category": "Libros",
+   "price_usd": 12.99,
+   "product_url": "https://librosevangelicos.com/products/el-sembrador-salio-a-sembrar-rafael-toirac",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_c3343f4f-8841-4642-8b50-6cbcb0c39e83.png?v=1610745809&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609253208221:1",
+   "summary": "El Sembrador Salió a Sembrar , de Rafael Toirac, toma como punto de partida la parábola del sembrador para reflexionar sobre la siembra de la Palabra de Dios y los corazones que la reciben. Una lectura que anima al creye"
+  },
+  {
+   "id": "37609065185437",
+   "title": "El Llamado - Hermano Andrés",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/hermano-andres-el-llamado",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_1a2fd7a0-7cbc-49c8-b3d6-cf7cb2fc15f8.png?v=1610744126&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609065185437:1",
+   "summary": "El Llamado , del Hermano Andrés, autor de El Contrabandista de Dios y fundador del ministerio Puertas Abiertas, anima al lector a descubrir y responder al llamado que Dios tiene para su vida. A través de experiencias de "
+  },
+  {
+   "id": "37609049030813",
+   "title": "Escritos en la Arena - Michael Card",
+   "category": "Regalos",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/escritos-en-la-arena-michael-card",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_6386c4cc-16a6-4132-a9d7-93c6422c34d9.png?v=1610743993&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37609049030813:1",
+   "summary": "Escritos en la Arena , de Michael Card, es una invitación a contemplar la creatividad a la luz de la vida de Jesús. El reconocido autor y compositor muestra cómo la imaginación y el arte pueden convertirse en una expresi"
+  },
+  {
+   "id": "37608991785117",
+   "title": "Viaje a Través del Antiguo Testamento - Guillermo Cotton",
+   "category": "Libros",
+   "price_usd": 12.99,
+   "product_url": "https://librosevangelicos.com/products/viaje-a-traves-del-antiguo-testamento-guillermo-cotton",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_18643297-0cf6-4757-af20-a57d2f696810.png?v=1610743841&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608991785117:1",
+   "summary": "Viaje a Través del Antiguo Testamento , de Guillermo Cotton, guía al lector en un recorrido por los libros del Antiguo Testamento, ayudándole a comprender su mensaje y su lugar dentro del plan de Dios. Una herramienta út"
+  },
+  {
+   "id": "37608983953565",
+   "title": "Dioses en Guerra - Kyle Idleman",
+   "category": "Libros",
+   "price_usd": 11.99,
+   "product_url": "https://librosevangelicos.com/products/dioses-en-guerra-kyle-idleman",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_cff30aec-968f-4ebe-94da-197199f7e564.png?v=1610743717&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608983953565:1",
+   "summary": "Dioses en Guerra , de Kyle Idleman, revela la batalla que se libra en el corazón humano: la lucha contra los ídolos modernos que compiten por el lugar que solo le pertenece a Dios. Con ejemplos actuales y fundamento bíbl"
+  },
+  {
+   "id": "37608968618141",
+   "title": "S.O.S. Iglesia - Pastor Rubén Giménez",
+   "category": "Iglesia",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/s-o-s-iglesia-pastor-ruben-gimenez",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_ba7d3253-ac79-4f90-ad16-25c4fcc003c4.png?v=1610743554&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608968618141:1",
+   "summary": "S.O.S. Iglesia , del Pastor Rubén Giménez, es un llamado de atención para la iglesia de hoy. El autor invita a los creyentes a examinar su vida espiritual y a volver al propósito que Dios tiene para Su pueblo. Una lectur"
+  },
+  {
+   "id": "37608836497565",
+   "title": "Sangre del Cielo - Bill Myers",
+   "category": "Libros",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/sangre-del-cielo-bill-myers",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_5676a2dd-90f2-49d7-b4e4-e41cb2d19284.png?v=1610743219&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608836497565:1",
+   "summary": "Cuando una empresa de biotecnología descubre una muestra de sangre con cromosomas Y inusuales que pueden haber pertenecido a Jesucristo, y los experimentos producen ratones y babuinos más amables y dóciles, hacen un trat"
+  },
+  {
+   "id": "37608776138909",
+   "title": "El Servir a Dios - Ben Patterson",
+   "category": "Libros",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/el-servir-a-dios-ben-patterson",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_d4c55b3c-dc7d-4103-b26a-a14b031405de.png?v=1610742955&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608776138909:1",
+   "summary": "El Servir a Dios , de Ben Patterson, invita al lector a redescubrir el servicio como una parte esencial de la vida cristiana. Con un lenguaje claro y cercano, el autor anima a poner los dones y el trabajo diario al servi"
+  },
+  {
+   "id": "37608766144669",
+   "title": "Matar a Lutero - Mario Escobar",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/matar-a-lutero-mario-escobar",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_cad09ee9-3e9b-414f-9cb4-ee1e5ebd2383.png?v=1610742832&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37608766144669:1",
+   "summary": "Matar a Lutero , del reconocido novelista Mario Escobar, es una novela histórica ambientada en los años convulsos de la Reforma, cuando la vida de Martín Lutero pendía de un hilo. Con ritmo de intriga y un cuidado retrat"
+  },
+  {
+   "id": "37607733133469",
+   "title": "Boletín de Pascua",
+   "category": "Regalos",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/bulletin-easter",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f8165d4f-e57f-4fec-9b4d-e7f3b098a164.png?v=1610732412&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37607733133469:1",
+   "summary": "Boletín de Pascua — Boletines para el servicio de la iglesia con motivo de la Pascua de Resurrección, ideales para los cultos de la congregación."
+  },
+  {
+   "id": "37607720091805",
+   "title": "Boletín Celebre la Pascua",
+   "category": "Regalos",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/bulletin-celebrate-easter",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_9f738fd8-d239-4160-8d80-f3237b66ffcc.png?v=1610732251&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37607720091805:1",
+   "summary": "Boletín Celebre la Pascua — Boletines para el servicio de la iglesia con motivo de la Pascua de Resurrección, ideales para los cultos y celebraciones de la congregación."
+  },
+  {
+   "id": "37607700856989",
+   "title": "Boletín ¡Él Vive!",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/bulletin-he-lives",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_25f1ec96-a707-4311-88ec-412851cd3370.png?v=1610732093&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37607700856989:1",
+   "summary": "Boletín ¡Él Vive! — Boletines para el servicio de la iglesia con el mensaje de la resurrección, ideales para los cultos de Pascua."
+  },
+  {
+   "id": "37607338967197",
+   "title": "Pluma «Do Small Things with Great Love»",
+   "category": "Libros",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/pluma-do-small-things-with-great-love",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_7e825608-41b6-4ef0-879d-81c058b1781f.png?v=1610728069&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37607338967197:1",
+   "summary": "Pluma cristiana con la frase «Do Small Things with Great Love» (Haz cosas pequeñas con gran amor). Un detalle práctico e inspirador, ideal para regalar."
+  },
+  {
+   "id": "37599939985565",
+   "title": "Nombres para Auto",
+   "category": "Regalos",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/nombres-auto",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_b4b301db-86af-4a04-8bca-83fdcade9167.png?v=1610667090&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37599939985565:1",
+   "summary": "Nombres para auto — Artículo cristiano decorativo con nombres para el auto, ideal como regalo o para uso personal."
+  },
+  {
+   "id": "37367378313373",
+   "title": "Comentario Bíblico Mundo Hispano 1, 2 y 3 Juan, Apocalipsis",
+   "category": "Libros",
+   "price_usd": 21.99,
+   "product_url": "https://librosevangelicos.com/products/comentario-biblico-mundo-hispano-1-2-y-3-juan-apocalipsis",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/IMG-7648.jpg?v=1701967098&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37367378313373:1",
+   "summary": "Comentario Bíblico Mundo Hispano: 1, 2 y 3 Juan y Apocalipsis presenta un estudio claro y práctico de estos libros del Nuevo Testamento. Ideal para pastores, maestros y estudiantes de la Biblia."
+  },
+  {
+   "id": "37356765970589",
+   "title": "Biblia para la Predicación de Avivamiento",
+   "category": "Biblias",
+   "price_usd": 74.99,
+   "product_url": "https://librosevangelicos.com/products/biblia-para-la-predicacion-de-avivamiento",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/files/D653412B-D290-4216-A9EA-D6C4C4630D90.jpg?v=1721083315&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37356765970589:1",
+   "summary": "Una herramienta indispensable para el ejercicio del ministerio cristiano: una Biblia única, con sermones listos para predicar. La Biblia para la Predicación de Avivamiento reúne 1002 sermones relacionados con el texto bí"
+  },
+  {
+   "id": "37327252324509",
+   "title": "Placa Decorativa para Moto",
+   "category": "Regalos",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/plate-moto",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_a75dd918-8df4-4f0e-9dcc-7753f44d32ad.png?v=1607623371&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37327252324509:1",
+   "summary": "Placa decorativa para moto — Artículo cristiano con un mensaje de fe e inspiración."
+  },
+  {
+   "id": "37327248720029",
+   "title": "Platos",
+   "category": "Regalos",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/plates",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_0c3b4a25-eae4-44a6-bb47-408255a82d64.png?v=1607623321&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37327248720029:1",
+   "summary": "Platos — Un artículo cristiano disponible en The Gospel Bookstore, ideal como regalo o para su colección personal."
+  },
+  {
+   "id": "37310174199965",
+   "title": "El Reino del Poder - Guillermo Maldonado",
+   "category": "Libros",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/el-reino-del-poder-guillermo-maldonado",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_4eb59c0f-ea54-4059-86eb-340dc3fdff4f.png?v=1607457477&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37310174199965:1",
+   "summary": "El Reino del Poder , de Guillermo Maldonado, enseña cómo manifestar el poder del reino de Dios en la vida diaria. Ideal para creyentes que desean experimentar una fe viva y activa."
+  },
+  {
+   "id": "37256690663581",
+   "title": "La transformación del niño en hombre",
+   "category": "Libros",
+   "price_usd": 10.99,
+   "product_url": "https://librosevangelicos.com/products/la-transformacion-del-nino-en-hombre",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_48ac35a6-0e6f-4252-a0bc-432f8242cafd.png?v=1606943554&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37256690663581:1",
+   "summary": "La Transformación del Niño en Hombre reflexiona sobre el paso de la niñez a la madurez y el papel de la fe en la formación del carácter. Un libro útil para padres, mentores y jóvenes."
+  },
+  {
+   "id": "37256675197085",
+   "title": "Lleva a los Niños a los Pies de Cristo",
+   "category": "Niños",
+   "price_usd": 11.99,
+   "product_url": "https://librosevangelicos.com/products/lleva-a-los-ninos-a-los-pies-de-cristo",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_71859642-6b82-485d-984b-3f3d7cac5dc0.png?v=1606943406&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37256675197085:1",
+   "summary": "Lleva a los Niños a los Pies de Cristo ofrece orientación práctica para padres y maestros que desean guiar a los niños hacia el Señor. Un recurso valioso para el hogar y la escuela dominical."
+  },
+  {
+   "id": "37255513440413",
+   "title": "Estudio Bíblico del Pescador",
+   "category": "Libros",
+   "price_usd": 7.99,
+   "product_url": "https://librosevangelicos.com/products/estudio-biblico-del-pescador",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_b988db4b-fd49-4312-967d-d47782cccd2f.jpg?v=1633643140&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37255513440413:1",
+   "summary": "Ahora más que nunca es necesario que los creyentes estén listos para presentar argumentos con fundamentos sólidos a un mundo con muchas dudas. La serie de Estudios Bíblicos del Pescador presenta Estudio Bíblico del Pesca"
+  },
+  {
+   "id": "37168190849181",
+   "title": "Himnario Rayos de Esperanza. Iglesia de Dios Evangelio Completo de Guatemala",
+   "category": "Iglesia",
+   "price_usd": 8.99,
+   "product_url": "https://librosevangelicos.com/products/himnario-rayos-de-esperanza-iglesia-de-dios-evangelio-competo-de-guatemala",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_dc64e4c0-a3e5-4bd4-a125-5a95d5a03b18.png?v=1606158209&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/37168190849181:1",
+   "summary": "Himnario Rayos de Esperanza , de la Iglesia de Dios Evangelio Completo de Guatemala. Contiene himnos y cantos para la adoración congregacional y personal, ideal para el uso en la iglesia y en el hogar."
+  },
+  {
+   "id": "35860589674653",
+   "title": "La Iglesia Eficaz: La Iglesia en las Casas - Dr. Giacomo Cassese",
+   "category": "Iglesia",
+   "price_usd": 5.99,
+   "product_url": "https://librosevangelicos.com/products/la-iglesia-eficaz-la-iglesia-en-las-casas-dr-giacomo-cassese",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_764a0a87-87cc-47a6-9b11-0599b214fb22.jpg?v=1598458969&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/35860589674653:1",
+   "summary": "En La Iglesia Eficaz: La Iglesia en las Casas , el Dr. Giacomo Cassese reflexiona sobre el modelo de las iglesias en los hogares y su vigencia para la vida congregacional de hoy. Una herramienta útil para pastores, líder"
+  },
+  {
+   "id": "35830616031389",
+   "title": "Pandero de 10 Pulgadas",
+   "category": "Niños",
+   "price_usd": 59.99,
+   "product_url": "https://librosevangelicos.com/products/tambourine-10",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_f4156962-90ed-461b-a9a9-718ae43d7774.jpg?v=1598305550&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/35830616031389:1",
+   "summary": "Pandero de 10 pulgadas — Instrumento de alabanza ideal para la adoración en el hogar, la iglesia y los momentos de celebración."
+  },
+  {
+   "id": "35747473916061",
+   "title": "El Camino Bíblico a la Bendición - Benny Hinn",
+   "category": "Libros",
+   "price_usd": 14.99,
+   "product_url": "https://librosevangelicos.com/products/el-camino-biblico-a-la-bendicion-benny-hinn",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_7d20fca0-b836-4621-a02f-2ea08c8cc77e.jpg?v=1597790614&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/35747473916061:1",
+   "summary": "En El camino bíblico a la bendición , Benny Hinn muestra los principios que la Palabra de Dios establece para vivir bajo la bendición del Señor. Un libro que anima al lector a confiar en Dios y a caminar en obediencia pa"
+  },
+  {
+   "id": "32209051549789",
+   "title": "La Biblia Latinoamérica",
+   "category": "Biblias",
+   "price_usd": 19.99,
+   "product_url": "https://librosevangelicos.com/products/la-biblia-latino-america",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_63fc04cf-74f1-4475-acf3-893babf0fab3.jpg?v=1586202869&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32209051549789:1",
+   "summary": "La Biblia Latinoamérica — Edición de la Biblia en un lenguaje sencillo y cercano, muy apreciada para la lectura personal, la catequesis y el estudio en comunidad."
+  },
+  {
+   "id": "32162365472861",
+   "title": "Vaso Térmico para Papá",
+   "category": "Regalos",
+   "price_usd": 16.99,
+   "product_url": "https://librosevangelicos.com/products/father-tumbler",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_45b5e54a-a5bb-4efd-8333-bbc15bb35439.jpg?v=1585337986&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32162365472861:1",
+   "summary": "Vaso Térmico para Papá — Vaso con mensaje cristiano, un regalo ideal para papá en su día o en cualquier ocasión especial."
+  },
+  {
+   "id": "32119472586845",
+   "title": "Heme Aquí, Señor, Envíame a Mí - Josué Yrion",
+   "category": "Libros",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/heme-aqui-senor-enviame-a-mi-josue-yrion",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_d4661788-f087-48bd-80ee-e4ec7a96582d.jpg?v=1584474257&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32119472586845:1",
+   "summary": "Heme Aquí, Señor, Envíame a Mí , del evangelista Josué Yrion, es un desafío a responder al llamado de Dios a las misiones y a la evangelización del mundo. Con pasión y testimonio, el autor anima a cada creyente a ponerse"
+  },
+  {
+   "id": "32119467475037",
+   "title": "La Conquista de Cristo en la Cruz - Josué Yrion",
+   "category": "Regalos",
+   "price_usd": 19.99,
+   "product_url": "https://librosevangelicos.com/products/la-conquista-de-cristo-en-la-cruz-josue-yrion",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_511a60fc-1fbb-4560-925d-1953370ef030.jpg?v=1584474183&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32119467475037:1",
+   "summary": "La Conquista de Cristo en la Cruz , del evangelista Josué Yrion, presenta la obra que Jesús consumó en el Calvario y la victoria que su sacrificio conquistó para cada creyente. Una lectura que profundiza en el significad"
+  },
+  {
+   "id": "32119449354333",
+   "title": "La Fe que Mueve la Mano de Dios - Josué Yrion",
+   "category": "Libros",
+   "price_usd": 13.99,
+   "product_url": "https://librosevangelicos.com/products/la-fe-que-mueve-la-mano-de-dios-josue-yrion",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_9333d888-f375-4060-9e54-ab12d8072123.jpg?v=1584474053&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32119449354333:1",
+   "summary": "La Fe que Mueve la Mano de Dios , del evangelista Josué Yrion, es un llamado a creerle a Dios y a ejercitar una fe firme que se aferra a Sus promesas. Una lectura que anima al creyente a orar con confianza y a esperar la"
+  },
+  {
+   "id": "32048104341597",
+   "title": "Palabras Finales Desde la Cruz - Adam Hilton",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/palabras-finales-desde-la-cruz-adam-hilton",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_331e8d1a-4290-4a17-bb1e-d9cbc6fc4f55.jpg?v=1582925285&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32048104341597:1",
+   "summary": "Palabras Finales desde la Cruz , de Adam Hilton, invita al lector a meditar en las últimas palabras que Jesús pronunció en la cruz y en su profundo significado para la vida cristiana. Una lectura apropiada para la Semana"
+  },
+  {
+   "id": "32025830359133",
+   "title": "Profundidad Espiritual - Giacomo Cassese",
+   "category": "Regalos",
+   "price_usd": 9.99,
+   "product_url": "https://librosevangelicos.com/products/profundidad-espiritual-giacomo-cassese",
+   "image": "https://cdn.shopify.com/s/files/1/0258/0948/5917/products/image_49367957-0a9a-4d20-8d4e-dfa64cc3aed3.jpg?v=1582578523&width=360",
+   "cart_url": "https://librosevangelicos.com/cart/32025830359133:1",
+   "summary": "Profundidad Espiritual , de Giacomo Cassese, es un libro cristiano que invita a cultivar una vida espiritual más profunda. Ideal para el crecimiento espiritual del creyente."
+  }
+ ]
+}
