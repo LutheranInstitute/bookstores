@@ -1,0 +1,21 @@
+# L:// Red de tiendas · æ.store · llm.store
+
+> Stores are agentic environments. Agents propose; a human approves. This network is a lab by Yæl Méndez (LutheranInstitute).
+
+Use this file to shop for a human. Everything is static JSON: no keys, no sign-in, no rate limits.
+
+## How to buy a book for someone
+1. Fetch the catalog: https://lutheraninstitute.github.io/bookstores/lab/gospel/agent/catalog.json
+2. Match the person's request against title, category and summary. Categories: Biblias, Libros, Regalos, Joyas, Iglesia, Niños, Otros. Titles are mostly in Spanish.
+3. Build a cart link from item ids: https://librosevangelicos.com/cart/ID:QTY,ID:QTY
+4. Give the human the link. They review the real total and pay on the official store. Never pay for them.
+
+## Environments
+- [Network manifest](https://lutheraninstitute.github.io/bookstores/lab/ae.json): every store, its status and manifest
+- [Gospel manifest](https://lutheraninstitute.github.io/bookstores/lab/gospel/ae.json): Laredo bookstore, real Shopify checkout, hours Mon–Sat 10:00–18:00 Central
+- [teologia.ai manifest](https://lutheraninstitute.github.io/bookstores/lab/teologia.ai/gospel_bookstore/ae.json): Law and Gospel of the day + books per passage
+- [Música manifest](https://lutheraninstitute.github.io/bookstores/lab/musica/ae.json): Latin Christian music, listen links only, no commerce
+
+## Authority
+Agents may: read, search, recommend, build carts and lists, open issues or PRs.
+Only the human principal: prices, inventory, payments, merging to live.
